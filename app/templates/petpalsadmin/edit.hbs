@@ -1,0 +1,13 @@
+<div class="admin-blog">
+  <ul>
+    <li>
+    {{input type="text" value=model.title class="blog-title" placeholder="Title" autofocus="autofocus"}}
+  </li>
+  <li>
+  {{textarea rows="4" cols="70"  value=model.body class="blog-body" placeholder="Blog Post" autofocus="autofocus"}}
+</li>
+  <li>
+      <button disabled={{isDisabled}} {{action 'savePost' model}} class="blog-button">Save Changes</button>
+    </li>
+  </ul>
+  </div>

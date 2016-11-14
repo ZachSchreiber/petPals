@@ -1,0 +1,17 @@
+{{outlet}}
+<div class="contact">
+  <ul>
+    <li>
+    {{input type="email" value=emailAddress class="contact-input email" placeholder="e-mail address." autofocus="autofocus"}}
+  </li>
+  <li>
+  {{textarea rows="4" cols="50"  value=message class="contact-input message" placeholder="message" autofocus="autofocus"}}
+</li>
+  <li>
+      <button disabled={{isDisabled}} {{action 'saveMessage'}} class="contact-button">Contact Us</button>
+    </li>
+  </ul>
+  {{#if responseMessage}}
+  <div class="alert-success">{{responseMessage}}</div>
+  {{/if}}
+  </div>

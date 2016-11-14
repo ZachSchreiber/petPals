@@ -1,0 +1,18 @@
+<h1>List</h1>
+<div class="row">
+  {{#each model as |blog-post|}}
+    <div class="post-container">
+        <div class="title-container">
+          <h3 class="blog-title">{{blog-post.title}}</h3>
+        </div>
+        <div class="panel-body">
+          <p>{{blog-post.body}}</p>
+          <p>{{blog-post.date}}</p>
+        </div>
+        <div class="post-footer">
+          {{#link-to 'petpalsadmin.edit' post.id class='edit-button'}}Edit{{/link-to}}
+          <button class="delete-button" {{action 'deletePost' blog-post}}>Delete</button>
+        </div>
+      </div>
+  {{/each}}
+</div>

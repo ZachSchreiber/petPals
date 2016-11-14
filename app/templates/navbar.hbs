@@ -1,0 +1,22 @@
+<nav class="navbar">
+  <div class="navbar-left">
+    <ul class="links-left">
+      <li>
+        {{#link-to 'index' tagName="li" }}<a href="">Home</a>{{/link-to}}
+        {{#link-to 'about' tagName="li"}}<a href="">About</a>{{/link-to}}
+        {{#link-to 'contact' tagName="li"}}<a href="">Contact</a>{{/link-to}}
+        {{#link-to 'gallery' tagName="li"}}<a href="">Gallery</a>{{/link-to}}
+        {{#link-to 'blog' tagName="li"}}<a href="">Blog</a>{{/link-to}}
+      </li>
+    </ul>
+  </div>
+  <div class="logo-container">
+    {{#link-to 'index' class="nav-logo" }}Logo{{/link-to}}
+  </div>
+  <div class="navbar-right">
+    <ul class="links-right">
+      <li>
+      </li>
+    </ul>
+  </div>
+</nav>

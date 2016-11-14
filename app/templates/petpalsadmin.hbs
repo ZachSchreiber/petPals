@@ -1,0 +1,10 @@
+
+<h1>Blog Posts</h1>
+
+<div class="toggle-container">
+  <ul class="toggle-list">
+    {{#link-to 'petpalsadmin.index' tagName="li"}}<a href="">List all</a>{{/link-to}}
+    {{#link-to 'petpalsadmin.new' tagName="li"}}<a href="">Add new</a>{{/link-to}}
+  </ul>
+</div>
+{{outlet}}
