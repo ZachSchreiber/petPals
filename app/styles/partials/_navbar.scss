@@ -1,0 +1,30 @@
+.main-container {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  height: 100px;
+  margin: 5% 0 0 0;
+	z-index: 99;
+	position: relative;
+  width: 100%;
+  background-color: red;
+  justify-content: space-between;
+
+  .navbar-right, .navbar-left {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+  .links-left li, .links-right li {
+    float: left;
+    text-align: center;
+    }
+
+    .drop li {
+      float: none;
+    }

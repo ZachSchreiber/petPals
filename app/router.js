@@ -7,14 +7,26 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('about');
+  this.route('about', function() {
+    this.route('pals');
+    this.route('pettherapy');
+    this.route('testimonials');
+  });
   this.route('contact');
-  this.route('gallery');
-  this.route('blog');
+  this.route('teams');
+  this.route('events', function() {
+    this.route('calender');
+    this.route('blog');
+  });
   this.route('petpalsadmin' , function() {
     this.route('new');
     this.route('edit', { path: '/:post_id/edit' });
 });
+  this.route('join', function() {
+    this.route('volunteer');
+    this.route('resources');
+    this.route('schools');
+  });
 });
 
 export default Router;
