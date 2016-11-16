@@ -1,0 +1,13 @@
+<div class="row">
+  {{#each model as |blog-post|}}
+    <div class="post-container">
+        <div class="title-container">
+          <h3 class="blog-title">{{blog-post.title}}</h3>
+        </div>
+        <div class="panel-body">
+          <p>{{blog-post.body}}</p>
+          <p>{{blog-post.date}}</p>
+        </div>
+      </div>
+  {{/each}}
+</div>
