@@ -1,9 +1,12 @@
-$main-font:  'Raleway', sans-serif;
+$main-font: 'Raleway', sans-serif;
+$main-red: #7e0310;
+$red-highlight: #97353f;
 
 
 .main-container {
   width: 100%;
   height:800px;
+  font-family: $main-font;
 }
 .content-container {
   width: 90%;
@@ -16,8 +19,7 @@ $main-font:  'Raleway', sans-serif;
   border: none;
 }
 .navbar, .navbar-default {
-  font: $main-font;
-  font-size: 2em;
+  font-size: 1.5em;
   z-index: 99;
   width: 100%;
   height: 194px;
@@ -29,7 +31,7 @@ $main-font:  'Raleway', sans-serif;
   .container-fluid {
     margin-top: 5%;
     width: 100%;
-    padding: 10px;
+    padding-top: 5px;
     position: absolute;
     background: #7E0310;
 
@@ -49,7 +51,6 @@ $main-font:  'Raleway', sans-serif;
        color: black;
 
        &:hover, &:focus {
-         color: white;
          text-decoration: none;
        }
      }
@@ -66,6 +67,9 @@ $main-font:  'Raleway', sans-serif;
   .links-right li {
     text-align: center;
 
+     &:hover, &:focus {
+       background-color: $red-highlight;
+     }
   }
 }
 
@@ -83,7 +87,6 @@ transform: translate(-50%,0);
 
 
  .logo {
-   border: 3px solid black;
  border-radius: 50%;
  padding: 10px;
  background: #fff;

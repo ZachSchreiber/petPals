@@ -53,4 +53,5 @@ Specify what it takes to deploy your app.
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
 
-# petPals
+#  Running sass 
+  * sass --watch app/styles/app.scss:dist/assets/app.css
