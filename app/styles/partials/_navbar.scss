@@ -52,8 +52,8 @@
     width: 100%;
   }
 
-  .links-left,
-  .links-right {
+  .list-left,
+  .list-right {
     width: 40%;
     display: flex;
     justify-content: space-between;
@@ -69,22 +69,22 @@
         text-decoration: none;
         // border: 1px solid black;
         // border-radius: 2px;
-        color: #2c2d2d;
+
       }
     }
   }
 
-  .links-right {
+  .list-right {
     float: right;
   }
 
-  .links-left {
+  .list-left {
     float: left;
     // position: absolute;
   }
 
-  .links-left li,
-  .links-right li {
+  .list-left li,
+  .list-right li {
     text-align: center;
 
     &:focus,
