@@ -1,30 +1,89 @@
 .main-container {
   width: 100%;
+  height:800px;
+
 }
 
-.navbar {
-  display: flex;
-  height: 100px;
-  margin: 5% 0 0 0;
-	z-index: 99;
-	position: relative;
-  width: 100%;
-  background-color: red;
-  justify-content: space-between;
+#nav-undo {
+  background-color: transparent;
+  border: none;
 
-  .navbar-right, .navbar-left {
-    width: 40%;
-    display: flex;
-    justify-content: center;
+}
+.navbar, .navbar-default {
+  font: 'Raleway', sans-serif;
+  font-size: 2em;
+  z-index: 99;
+  width: 100%;
+  height: 230px;
+  margin-top: 2%;
+
+
+
+
+  .container-fluid {
+    margin-top: 5%;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    background: #7E0310;
+
+
   }
 
+  .collapse, .navbar-collapse {
+    width: 100%;
+  }
+
+  .links-left,
+  .links-right {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+     a{
+       color: black;
+     }
+
+  }
+  .links-right {
+    float: right;
+  }
+  .links-left {
+    float: left;
+  }
+
+  .links-left li,
+  .links-right li {
+    text-align: center;
+
+  }
 }
 
-  .links-left li, .links-right li {
-    float: left;
-    text-align: center;
-    }
+.logo-container {
+ position: relative;
+ left: 50%;
+-webkit-transform: translate(-50%,0);
+-moz-transform: translate(-50%,0);
+-ms-transform: translate(-50%,0);
+transform: translate(-50%,0);
+  text-align: center;
+  width: 190px;
+  height:190px;
+  z-index: 3;
 
-    .drop li {
-      float: none;
-    }
+
+ .logo {
+   border: 3px solid black;
+ border-radius: 50%;
+ padding: 10px;
+ background: #fff;
+ display: flex;
+ justify-content: center;
+ background-color: #7E0310;
+
+ img {
+   max-width: 100%;
+   max-height: 100%;
+ }
+
+ }
+}

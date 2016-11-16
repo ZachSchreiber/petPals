@@ -1,14 +1,19 @@
-<nav class="navbar">
-  <div class="navbar-left">
-    <ul class="links-left">
-      <li>
-        {{#link-to 'index' tagName="li" }}<a href="">Home</a>{{/link-to}}
-      </li>
+<nav>
+  <div class="navbar navbar-default" id="nav-undo">
+    <div class="container-fluid" >
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+        <span class="mobile-menu">menu</span>
+      </button>
+    <div class="collapse navbar-collapse">
+      <ul class="links-left">
         <li>
+          {{#link-to 'index' tagName="li" }}<a href="">Home</a>{{/link-to}}
+        </li>
+        <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             About
           </a>
-          <ul class="drop">
+          <ul class="dropdown-menu">
             <li>
               {{#link-to 'about.pals' tagName="li" }}<a href="">Pet Pals</a>{{/link-to}}
             </li>
@@ -20,48 +25,50 @@
             </li>
           </ul>
         </li>
-      <li>
-        {{#link-to 'teams' tagName="li" }}<a href="">Teams</a>{{/link-to}}
-      </li>
-    </ul>
-  </div>
-  <div class="logo-container">
-    {{#link-to 'index' class="nav-logo" }}Logo{{/link-to}}
-  </div>
-  <div class="navbar-right">
-    <ul class="links-right">
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        <li>
+          {{#link-to 'teams' tagName="li" }}<a href="">Teams</a>{{/link-to}}
+        </li>
+      </ul>
+      <ul class="links-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               Join Us!
             </a>
-            <ul  class="drop">
-              <li>
-                {{#link-to 'join.volunteer' tagName="li" }}<a href="">Volunteer</a>{{/link-to}}
-              </li>
-              <li>
-                {{#link-to 'join.resources' tagName="li" }}<a href="">Resources</a>{{/link-to}}
-              </li>
-              <li>
-                {{#link-to 'join.schools' tagName="li" }}<a href="">Schools</a>{{/link-to}}
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <ul class="dropdown-menu">
+            <li>
+              {{#link-to 'join.volunteer' tagName="li" }}<a href="">Volunteer</a>{{/link-to}}
+            </li>
+            <li>
+              {{#link-to 'join.resources' tagName="li" }}<a href="">Resources</a>{{/link-to}}
+            </li>
+            <li>
+              {{#link-to 'join.schools' tagName="li" }}<a href="">Schools</a>{{/link-to}}
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               Events
             </a>
-            <ul class="drop">
-              <li>
-                {{#link-to 'events.calender' tagName="li" }}<a href="">Calender</a>{{/link-to}}
-              </li>
-              <li>
-                {{#link-to 'events.blog' tagName="li" }}<a href="">Blog</a>{{/link-to}}
-              </li>
-            </ul>
-          </li>
-      <li>
-        {{#link-to 'contact' tagName="li" }}<a href="">Contact</a>{{/link-to}}
-      </li>
-    </ul>
+          <ul class="dropdown-menu">
+            <li>
+              {{#link-to 'events.calender' tagName="li" }}<a href="">Calender</a>{{/link-to}}
+            </li>
+            <li>
+              {{#link-to 'events.blog' tagName="li" }}<a href="">Blog</a>{{/link-to}}
+            </li>
+          </ul>
+        </li>
+        <li>
+          {{#link-to 'contact' tagName="li" }}<a href="">Contact</a>{{/link-to}}
+        </li>
+      </ul>
+    </div>
   </div>
+  <div class="logo-container">
+    <div class="logo">
+      {{#link-to 'index' class="nav-logo" }}<img src='assets/images/Paw.svg.png'>{{/link-to}}
+    </div>
+  </div>
+</div>
 </nav>

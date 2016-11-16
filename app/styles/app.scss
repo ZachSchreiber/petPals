@@ -7,3 +7,11 @@
 @import "partials/about";
 @import "partials/contact";
 @import "partials/gallery";
+@import "partials/setup/variables";
+
+
+//---bootstrap----//
+@import "bootstrap";
+
+
+$main-font:  'Raleway', sans-serif;
