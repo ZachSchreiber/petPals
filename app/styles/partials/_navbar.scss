@@ -1,17 +1,19 @@
-$main-font: 'Raleway', sans-serif;
-$main-red: #7e0310;
-$red-highlight: #97353f;
+@import 'setup/variables';
 
 
 .main-container {
   width: 100%;
   height:800px;
   font-family: $main-font;
+  background: url('/assets/images/background.png');
 }
 .content-container {
   width: 90%;
-  border: 2px solid black;
+  // border: 2px solid black;
   margin: 0 auto;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 #nav-undo {
