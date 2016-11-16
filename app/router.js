@@ -17,6 +17,7 @@ Router.map(function() {
   this.route('events', function() {
     this.route('calender');
     this.route('blog');
+
   });
   this.route('petpalsadmin' , function() {
     this.route('new');
