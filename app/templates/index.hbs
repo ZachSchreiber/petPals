@@ -1,8 +1,8 @@
 <div class="content-container">
   <div id="container">
-  <div id="block"></div>
-  <div id="text">Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike. Good Boy park lazy dog walk kibble Scooby snacks licks canary. Maine Coon Cat walk catch water dog slobber chew scratcher ID tag litter tuxedo dog house lazy cat park. </div>
-</div>
+    <div id="block"></div>
+    <div id="text">PetPalsNC, Inc. promotes and supports the use of animal-assisted therapy and activities for K-12 students to enhance academic, social, emotional, and behavioral growth</div>
+  </div>
   <!-- <div class="mailing-list">
     <ul>
       <li>
@@ -20,9 +20,21 @@
 
 
 </div>
-
-<div class="calender">
-  <div id="calender-head">
-  <p>UPDATES</p>
-</div>
-</div>
+<div id="calender-container">
+    <div id="calender-head">
+      <p>UPDATES</p>
+    </div>
+    <div id="blog-main">
+      {{#each model as |blog-post|}}
+        <div id="blog-container">
+          <div id="blog-title">
+            <h3 id="title">{{blog-post.title}}</h3>
+            <p id="date">{{blog-post.date}}</p>
+          </div>
+          <div id="blog-body">
+            <p>{{blog-post.body}}</p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
