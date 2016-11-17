@@ -6,61 +6,61 @@
       </button>
       <div class="collapse navbar-collapse">
         <ul class="navitems">
-          <li>
+          <li class="mainMenu">
             {{#link-to 'index' tagName="li" }}<a href="">HOME</a>{{/link-to}}
           </li>
-          <li class="dropdown">
+          <li class="dropdown mainMenu">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             ABOUT<span class="caret"></span>
           </a>
             <ul class="dropdown-menu">
-              <li>
+              <li class="subMenu">
                 {{#link-to 'about.pals' tagName="li" }}<a href="">PET PALS</a>{{/link-to}}
               </li>
-              <li>
-                {{#link-to 'about.pettherapy' tagName="li" }}<a href="">WHAT IS PET THERAPY?</a>{{/link-to}}
+              <li class="subMenu">
+                {{#link-to 'about.pettherapy' tagName="li" }}<a href="">PET THERAPY</a>{{/link-to}}
               </li>
-              <li>
+              <li class='subMenu'>
                 {{#link-to 'about.testimonials' tagName="li" }}<a href="">TESTIMONIALS</a>{{/link-to}}
               </li>
             </ul>
           </li>
-          <li>
+          <li class="mainMenu">
             {{#link-to 'teams' tagName="li" }}<a href="">TEAMS</a>{{/link-to}}
           </li>
         <li id='logospace'>
         LOGO
         </li>
-          <li class="dropdown">
+          <li class="dropdown mainMenu">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               JOIN US!<span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <li>
+              <li class="subMenu">
                 {{#link-to 'join.volunteer' tagName="li" }}<a href="">VOLUNTEER</a>{{/link-to}}
               </li>
-              <li>
+              <li class="subMenu">
                 {{#link-to 'join.resources' tagName="li" }}<a href="">RESOURCES</a>{{/link-to}}
               </li>
-              <li>
+              <li class="subMenu">
                 {{#link-to 'join.schools' tagName="li" }}<a href="">SCHOOLS</a>{{/link-to}}
               </li>
             </ul>
           </li>
-          <li class="dropdown">
+          <li class="dropdown mainMenu">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               EVENTS<span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <li>
+              <li class="subMenu">
                 {{#link-to 'events.calender' tagName="li" }}<a href="">CALENDER</a>{{/link-to}}
               </li>
-              <li>
+              <li class="subMenu">
                 {{#link-to 'events.blog' tagName="li" }}<a href="">BLOG</a>{{/link-to}}
               </li>
             </ul>
           </li>
-          <li>
+          <li class="mainMenu">
             {{#link-to 'contact' tagName="li" }}<a href="">CONTACT</a>{{/link-to}}
           </li>
         </ul>
