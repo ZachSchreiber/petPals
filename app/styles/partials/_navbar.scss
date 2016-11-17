@@ -1,5 +1,3 @@
-
-
 @import "setup/variables";
 
 *{
@@ -15,8 +13,57 @@
 }
 
 .content-container {
-  width: 90%;
-  margin: 0 auto;
+  background: url('/assets/images/stock-dog') center no-repeat;
+  background-size:cover;
+  width: 68%;
+  height: 420px;
+  display: inline-block;
+  margin-left:5%;
+  //background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: $webkit-shadow;
+  box-shadow: $box-shadow;
+}
+
+
+#container {
+  position: relative;
+  top: 40%;
+  width: 30%;
+  height: 60%;
+}
+#block {
+  border-radius: 2px;
+  background: #CCC;
+  filter: alpha(opacity=60);
+  /* IE */
+  -moz-opacity: 0.6;
+  /* Mozilla */
+  opacity: 0.6;
+  /* CSS3 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#text {
+  padding: 10px;
+  text-align: center;
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.calender {
+  float: right;
+  width: 20%;
+  height: 420px;
+  margin-right: 5%;
   background: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -37,60 +84,41 @@
   width: 100%;
   height: 194px;
   padding-top: 10px;
-  .container-fluid {
-    margin-top: 5%;
-    width: 100%;
-    padding-top: 5px;
-    position: absolute;
-    background: $red-highlight;
-    -webkit-box-shadow: $webkit-shadow;
-    box-shadow: $box-shadow;
-  }
 
+}
   .collapse,
   .navbar-collapse {
     width: 100%;
-  }
 
-  .list-left,
-  .list-right {
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
+}
 
-    a {
-      color: #E7E8E9;
-      font-weight: 500;
-      text-align: center;
-      width: 50px
+#logospace{
+  width: 455px;
+  color: $main-red;
+}
 
-      &:focus,
-      &:hover {
-        text-decoration: none;
-         //border: 1px solid black;
-        // border-radius: 2px;
+.navitems{
+  color: black;
+  display: flex;
+  flex: 1 1 auto;
+  margin-top: 6%;
+  position: absolute;
+  background: $main-red;
+  width: 100%;
+  box-shadow: $box-shadow;
+  -webkit-box-shadow:  $webkit-shadow;
 
-      }
-    }
-  }
-
-  .list-right {
-    float: right;
-  }
-
-  .list-left {
-    float: left;
-    // position: absolute;
-  }
-
-  .list-left li,
-  .list-right li {
+  li{
+    width: 35%;
     text-align: center;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    color: black;
 
-    &:focus,
-    &:hover {
-      // border: 1px solid black;
-      // border-radius: 2px;
+    &:hover{
+      background: $red-highlight;
+      text-decoration: none;
+
     }
   }
 }
@@ -113,7 +141,7 @@
     background: #fff;
     display: flex;
     justify-content: center;
-    background-color: $red-highlight;
+    background-color: $main-red;
     -webkit-box-shadow: $webkit-shadow;
     box-shadow: $box-shadow;
 
