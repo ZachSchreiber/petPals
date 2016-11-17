@@ -1,12 +1,11 @@
 
-
-<div class="row">
+<div id="blog-main">
   {{#each model as |blog-post|}}
-    <div class="post-container">
-        <div class="title-container">
-          <h3 class="blog-title">{{blog-post.title}}</h3>
+    <div id="blog-container">
+        <div id="blog-title">
+          <h3 id="title">{{blog-post.title}}</h3>
         </div>
-        <div class="panel-body">
+        <div id="blog-body">
           <p>{{blog-post.body}}</p>
           <p>{{blog-post.date}}</p>
         </div>
