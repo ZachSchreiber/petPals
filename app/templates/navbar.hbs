@@ -5,7 +5,7 @@
         <span class="mobile-menu">MENU</span>
       </button>
       <div class="collapse navbar-collapse">
-        <ul class="list-left">
+        <ul class="navitems">
           <li>
             {{#link-to 'index' tagName="li" }}<a href="">HOME</a>{{/link-to}}
           </li>
@@ -28,8 +28,9 @@
           <li>
             {{#link-to 'teams' tagName="li" }}<a href="">TEAMS</a>{{/link-to}}
           </li>
-        </ul>
-        <ul class="list-right">
+        <li id='logospace'>
+        LOGO
+        </li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               JOIN US!<span class="caret"></span>
