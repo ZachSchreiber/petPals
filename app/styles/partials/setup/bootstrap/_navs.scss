@@ -10,6 +10,7 @@
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
   list-style: none;
+
   @include clearfix;
 
   > li {
@@ -20,6 +21,7 @@
       position: relative;
       display: block;
       padding: $nav-link-padding;
+
       &:hover,
       &:focus {
         text-decoration: none;
@@ -48,6 +50,7 @@
     &:focus {
       background-color: $nav-link-hover-bg;
       border-color: $link-color;
+      text-align: center;
     }
   }
 
@@ -116,8 +119,8 @@
 // -------------------------
 .nav-pills {
   > li {
-    float: left;
-
+    // float: left;
+    text-align: center;
     // Links rendered as pills
     > a {
       border-radius: $nav-pills-border-radius;
