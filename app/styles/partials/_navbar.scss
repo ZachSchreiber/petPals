@@ -78,7 +78,7 @@
     border-radius: 2px;
     width: 100%;
     height: 40px;
-    background: $main-red;
+    background: $red-highlight;
     padding-top: 5px;
     display: flex;
     align-items: center;
@@ -109,7 +109,7 @@
 
 #logospace{
   width: 455px;
-  color: $main-red;
+  color: $red-highlight;
 }
 
 .navitems{
@@ -118,7 +118,7 @@
   flex: 1 1 auto;
   margin-top: 6%;
   position: absolute;
-  background: $main-red;
+  background: $red-highlight;
   width: 100%;
   box-shadow: $box-shadow;
   -webkit-box-shadow:  $webkit-shadow;
@@ -155,7 +155,7 @@
     background: #fff;
     display: flex;
     justify-content: center;
-    background-color: $main-red;
+    background-color: $red-highlight;
     -webkit-box-shadow: $webkit-shadow;
     box-shadow: $box-shadow;
 
@@ -186,5 +186,5 @@
 }
 
 .subMenu:hover{
-  background: #81cbc3;
+  background: $red-highlight;
 }
