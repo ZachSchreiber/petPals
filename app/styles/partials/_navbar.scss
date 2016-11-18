@@ -1,9 +1,8 @@
 @import "setup/variables";
 
-*{
+* {
   box-sizing: border-box;
 }
-
 
 .main-container {
   width: 100%;
@@ -14,11 +13,11 @@
 
 .content-container {
   background: url('/assets/images/stock-dog') center no-repeat;
-  background-size:cover;
+  background-size: cover;
   width: 68%;
   height: 425px;
   display: inline-block;
-  margin-left:5%;
+  margin-left: 5%;
   //background: #fff;
   padding: 20px;
   border-radius: 2px;
@@ -26,28 +25,26 @@
   box-shadow: $box-shadow;
 }
 
-
 #container {
   position: relative;
   top: 40%;
   width: 30%;
   height: 60%;
 }
+
 #block {
   border-radius: 2px;
   background: #CCC;
   filter: alpha(opacity=60);
-  /* IE */
   -moz-opacity: 0.6;
-  /* Mozilla */
   opacity: 0.6;
-  /* CSS3 */
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
 }
+
 #text {
   font-size: 1.25em;
   display: flex;
@@ -69,12 +66,13 @@
   border-radius: 2px;
   width: 100%;
   height: 40px;
-  background:  $main-yellow;
+  background: $main-yellow;
   padding-top: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 #calender-container {
   float: right;
   width: 20%;
@@ -85,35 +83,31 @@
   -webkit-box-shadow: $webkit-shadow;
   box-shadow: $box-shadow;
 
-<<<<<<< HEAD
   #calender-head {
     color: black;
     font-size: 1.5em;
     border-radius: 2px;
     width: 100%;
     height: 40px;
-    background: $red-highlight;
+    background: $main-yellow;
     padding-top: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-=======
 
-#blog-main {
-  width: 100%;
-  overflow-y: scroll;
-  overflow-x:hidden;
-  height: 385px;
-
->>>>>>> 9f80bbe64030e0f2e70f32939776205e8d7683a2
-}
+  #blog-main {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 385px;
+  }
 }
 
-#title, #date {
+#date,
+#title {
   display: inline-block;
 }
-
 
 #nav-undo {
   background-color: transparent;
@@ -128,37 +122,28 @@
   width: 100%;
   height: 194px;
   padding-top: 10px;
-
-}
-  .collapse,
-  .navbar-collapse {
-    width: 100%;
-
 }
 
-#logospace{
+.collapse,
+.navbar-collapse {
+  width: 100%;
+}
+
+#logospace {
   width: 455px;
-<<<<<<< HEAD
-  color: $red-highlight;
-=======
   color: $main-yellow;
->>>>>>> 9f80bbe64030e0f2e70f32939776205e8d7683a2
 }
 
-.navitems{
+.navitems {
   color: black;
   display: flex;
   flex: 1 1 auto;
   margin-top: 6%;
   position: absolute;
-<<<<<<< HEAD
-  background: $red-highlight;
-=======
   background: $main-yellow;
->>>>>>> 9f80bbe64030e0f2e70f32939776205e8d7683a2
   width: 100%;
   box-shadow: $box-shadow;
-  -webkit-box-shadow:  $webkit-shadow;
+  -webkit-box-shadow: $webkit-shadow;
 
   .mainMenu {
     width: 35%;
@@ -166,10 +151,9 @@
     padding-bottom: 2.5px;
     text-align: center;
 
-    &:hover{
+    &:hover {
       background: $yellow-highlight;
       text-decoration: none;
-
     }
   }
 }
@@ -192,11 +176,7 @@
     background: #fff;
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
-    background-color: $red-highlight;
-=======
-    background-color:  $main-yellow;
->>>>>>> 9f80bbe64030e0f2e70f32939776205e8d7683a2
+    background-color: $main-yellow;
     -webkit-box-shadow: $webkit-shadow;
     box-shadow: $box-shadow;
 
@@ -226,10 +206,6 @@
   }
 }
 
-.subMenu:hover{
-<<<<<<< HEAD
-  background: $red-highlight;
-=======
-  background: $main-yellow;
->>>>>>> 376ec3e1a5547d4dd266f9af8b5f37e5f591b1aa
+.subMenu:hover {
+  background: $sub-yellow;
 }
