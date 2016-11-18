@@ -24,6 +24,10 @@ export default Ember.Controller.extend({
         self.set('emailAddress', '');
              });
     }
+
+    getDate () {
+      
+    }
   }
 
 });
