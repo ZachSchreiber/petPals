@@ -209,3 +209,8 @@
 .subMenu:hover {
   background: $sub-yellow;
 }
+
+.collapse
+&::after {
+  top: 300px;
+}

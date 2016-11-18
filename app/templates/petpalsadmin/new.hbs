@@ -1,19 +1,39 @@
 <div class="admin-blog">
   <ul>
     <li>
-    {{input type="text" value=model.title class="blog-title" placeholder="Title" autofocus="autofocus"}}
-  </li>
-  <li>
-  {{input type="date" value=model.date class="blog-date" placeholder="date" autofocus="autofocus"}}
-</li>
-  <li>
-  {{textarea rows="4" cols="70"  value=model.body class="blog-body" placeholder="Blog Post" autofocus="autofocus"}}
-</li>
-  <li>
-      <button disabled={{isDisabled}} {{action 'savePost' model}} class="blog-button">Post</button>
+      {{input type="text" value=model.title class="blog-title" placeholder="Title" autofocus="autofocus"}}
+    </li>
+    <li>
+      {{input type="date" value=model.date class="blog-date" placeholder="Date" autofocus="autofocus"}}
+    </li>
+    <li>
+      {{textarea rows="4" cols="70" value=model.body class="blog-body" placeholder="Blog Post" autofocus="autofocus"}}
+    </li>
+    <li>
+      <button disabled= {{isDisabled}} {{action 'savePost' model}} class="blog-button">Post</button>
     </li>
   </ul>
   {{#if responseMessage}}
-  <div class="alert-success">{{responseMessage}}</div>
+    <div class="alert-success">{{responseMessage}}</div>
   {{/if}}
-  </div>
+</div>
+
+<div class="admin-blog">
+  <ul>
+    <li>
+      {{input type="file" accept="image/*" value=model.image  class="team-image" placeholder="Picture" autofocus="autofocus"}}
+    </li>
+    <li>
+      {{input type="text" value=model.name class="team-name" placeholder="Team Name" autofocus="autofocus"}}
+    </li>
+    <li>
+      {{textarea rows="4" cols="70" value=model.bio class="team-bio" placeholder="Team Bio" autofocus="autofocus"}}
+    </li>
+    <li>
+      <button disabled= {{isDisabled}} {{action 'saveTeam' model}} class="blog-button">New Team</button>
+    </li>
+  </ul>
+  {{#if responseMessage}}
+    <div class="alert-success">{{responseMessage}}</div>
+  {{/if}}
+</div>
