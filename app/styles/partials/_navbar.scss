@@ -144,7 +144,7 @@
     text-align: center;
 
     &:hover{
-      background: $red-highlight;
+      background: $yellow-highlight;
       text-decoration: none;
 
     }
@@ -189,7 +189,7 @@
     margin: 2px 0 0;
     list-style: none;
     font-size: 18px;
-    background-color: $red-highlight;
+    background-color: $yellow-highlight;
     border-radius: 2px;
     border: none;
     -webkit-box-shadow: $webkit-shadow;
@@ -200,5 +200,5 @@
 }
 
 .subMenu:hover{
-  background: #81cbc3;
+  background: $main-yellow;
 }
