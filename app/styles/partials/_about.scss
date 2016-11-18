@@ -3,14 +3,15 @@
   height: 40px;
   background: $main-yellow;
   border-bottom-right-radius: 2px;
-
 }
+
 .tab-list {
   display: flex;
   justify-content: space-between;
   font-size: 1.2em;
   height: 100%;
 }
+
 .tab-list li {
   width: 100%;
   padding-top: 4px;
@@ -18,10 +19,9 @@
   text-align: center;
   margin: 0 auto;
 
-  &:hover{
+  &:hover {
     background: $yellow-highlight;
     text-decoration: none;
-
   }
 }
 
@@ -30,4 +30,61 @@
   overflow-y: scroll;
   overflow-x: hidden;
   height: 385px;
+  padding: 15px;
+}
+
+.list {
+  margin: 0 auto;
+  width: 515px;
+  line-height: 180%;
+  text-align: left;
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.fa.fa-paw {
+  padding-right: 10px;
+}
+
+ul h4{
+  font-weight: bolder;
+  font-size: 22px;
+}
+body {
+  text-align: center;
+  overflow: hidden;
+}
+
+h2 {
+  display: inline-block;
+  position: relative;
+
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 550%;
+    top: 50%;
+    right: 100%;
+    background: black;
+  }
+}
+
+h2:after {
+  left: 100%;
+}
+
+.testimonial-p{
+  font-size: 16px;
+  font-style: italic;
+}
+
+.fa.fa-quote-left{
+  font-size: 35px;
+  color: $lighter-gray;
 }
