@@ -1,14 +1,19 @@
-
 <div id="blog-main">
   {{#each model as |blog-post|}}
     <div id="blog-container">
-        <div id="blog-title">
-          <h3 id="title">{{blog-post.title}}</h3>
-        </div>
-        <div id="blog-body">
-          <p>{{blog-post.body}}</p>
-          <p>{{blog-post.date}}</p>
-        </div>
+      <div id="blog-title">
+        <ul>
+          <li>
+            <p>{{blog-post.date}}</p>
+          </li>
+          <li>
+            <h3 id="title">{{blog-post.title}}</h3>
+          </li>
+        </ul>
       </div>
+      <div id="blog-body">
+        <p>{{blog-post.body}}</p>
+      </div>
+    </div>
   {{/each}}
 </div>
