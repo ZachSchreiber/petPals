@@ -1,4 +1,26 @@
 
 <h1>Teams</h1>
 
+
+<div id="blog-main">
+  {{#each model as |teams|}}
+    <div id="blog-container">
+      <div id="blog-title">
+        <ul>
+          <li>
+            <p>{{teams.image}}</p>
+          </li>
+          <li>
+            <h3 id="title">{{teams.name}}</h3>
+          </li>
+        </ul>
+      </div>
+      <div id="blog-body">
+        <p>{{teams.bio}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+
 {{outlet}}
