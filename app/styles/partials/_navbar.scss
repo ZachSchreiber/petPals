@@ -188,9 +188,12 @@
 
 .dropdown {
   .dropdown-menu {
-    min-width: 200px;
-    left: -10px;
-    top: 34px;
+    //min-width: 200px;
+    //left: -10px;
+    top: -2px;
+    position: absolute;
+    //display: none;
+   visibility: hidden;
     padding: 5px 0;
     margin: 2px 0 0;
     list-style: none;
@@ -202,6 +205,8 @@
     box-shadow: $box-shadow;
     background-clip: padding-box;
     width: 100%;
+    transition: .1s ease-out;
+    z-index: -3;
   }
 }
 
