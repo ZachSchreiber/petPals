@@ -26,6 +26,7 @@ export default Ember.Route.extend({
     saveTeam(newPost) {
       newPost.save().then(() => this.transitionTo('petpalsadmin'));
     }
+    
 
   }
 });
