@@ -10,7 +10,7 @@
       {{textarea rows="4" cols="70" value=model.bio class="team-bio" placeholder="Team Bio" autofocus="autofocus"}}
     </li>
     <li>
-      <button disabled= {{isDisabled}} {{action 'saveTeam' model}} class="blog-button">New Team</button>
+      <button disabled= {{isDisabled}} {{action 'saveTeam' model}} class="all-buttons">New Team</button>
     </li>
   </ul>
   {{#if responseMessage}}
@@ -34,7 +34,7 @@
       <div id="blog-body">
         <p>{{teams.bio}}</p>
       </div>
-      <button class="delete-button" {{action 'deleteTeam' teams}}>Delete</button>
+      <button class="all-buttons" {{action 'deleteTeam' teams}}>Delete</button>
     </div>
   {{/each}}
 </div>

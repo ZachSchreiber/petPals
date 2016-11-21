@@ -12,9 +12,22 @@
   {{textarea rows="4" cols="50"  value=message class="contact-input message" placeholder="message" autofocus="autofocus"}}
 </li>
   <li>
-      <button disabled={{isDisabled}} {{action 'saveMessage'}} class="contact-button">Contact Us</button>
+      <button disabled={{isDisabled}} {{action 'saveMessage'}} class="all-buttons">Contact Us</button>
     </li>
   </ul>
+  <div class="social-icons">
+    <ul class="icons-list">
+      <li>
+        <p><i class="fa fa-facebook-square" aria-hidden="true"></i></p>
+      </li>
+      <li>
+        <p><i class="fa fa-twitter-square" aria-hidden="true"></i></p>
+      </li>
+      <li>
+        <p><i class="fa fa-instagram" aria-hidden="true"></i></p>
+      </li>
+    </ul>
+  </div>
   {{#if responseMessage}}
   <div class="alert-success">{{responseMessage}}</div>
   {{/if}}

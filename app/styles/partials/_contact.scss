@@ -4,7 +4,7 @@
   padding-top: 50px;
  }
 
-.contact-button{
+.all-buttons{
   background: $main-yellow;
   border: none;
   border-radius: 3px;
@@ -28,4 +28,22 @@ textarea, input{
   width: 100%;
   border-radius: 3px;
   padding: 5px;
+}
+
+.social-icons {
+  margin-left: 20px;
+  width: 10%;
+  display: inline-block;
+  float: left;
+}
+
+.icons-list {
+  color: $lighter-gray;
+  font-size: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons-list li {
+  float: left;
 }
