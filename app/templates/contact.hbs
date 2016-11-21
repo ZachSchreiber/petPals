@@ -3,16 +3,16 @@
   <div id='contact-container'>
   <ul>
     <li class='form'>
-    {{input type="name" value=yourname class="contact-input name" placeholder="name." autofocus="autofocus"}}
+    {{input type="name" value=yourname class="contact-input name" placeholder="Name" autofocus="autofocus"}}
   </li>
     <li class='form'>
-    {{input type="email" value=emailAddress class="contact-input email" placeholder="e-mail address." autofocus="autofocus"}}
+    {{input type="email" value=emailAddress class="contact-input email" placeholder="E-mail Address" autofocus="autofocus"}}
   </li>
   <li class='form'>
-  {{textarea rows="4" cols="50"  value=message class="contact-input message" placeholder="message" autofocus="autofocus"}}
+  {{textarea rows="4" cols="50"  value=message class="contact-input message" placeholder="Message" autofocus="autofocus"}}
 </li>
   <li>
-      <button disabled={{isDisabled}} {{action 'saveMessage'}} class="contact-button">Contact Us</button>
+      <button disabled={{isDisabled}} {{action 'saveMessage'}} class="allbuttons">Contact Us</button>
     </li>
   </ul>
   {{#if responseMessage}}
