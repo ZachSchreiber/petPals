@@ -11,8 +11,8 @@
       </button>
       <div class="collapse navbar-collapse" id="main-navbar" aria-expanded="false">
         <ul class="navitems">
-          <li class="mainMenu">
-            {{#link-to 'index' tagName="li" }}<a href="">HOME</a>{{/link-to}}
+          <li id='logospace'>
+          LOGO
           </li>
           <li class="dropdown mainMenu">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">
@@ -33,9 +33,7 @@
           <li class="mainMenu">
             {{#link-to 'teams' tagName="li" }}<a href="">TEAMS</a>{{/link-to}}
           </li>
-        <li id='logospace'>
-        LOGO
-        </li>
+          <!--logospace-->
           <li class="dropdown mainMenu">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               JOIN US!<span class="caret"></span>
@@ -66,11 +64,13 @@
             </ul>
           </li>
           <li class="mainMenu">
-            {{#link-to 'contact' tagName="li" }}<a href="">CONTACT</a>{{/link-to}}
+            {{#link-to 'index' tagName="li" }}<a href="">DONATE</a>{{/link-to}}
+          </li>
+          <li class="mainMenu">
+            {{#link-to 'contact' tagName="li" }}<a href="">CONNECT</a>{{/link-to}}
           </li>
         </ul>
       </div>
     </div>
-
   </div>
 </nav>

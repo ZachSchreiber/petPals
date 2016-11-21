@@ -21,7 +21,7 @@
 }
 
 #logospace {
-  width: 455px;
+  width: 560px;
   color: $main-yellow;
 }
 
@@ -43,7 +43,7 @@
     text-align: center;
 
     &:hover {
-      background: $yellow-highlight;
+      background: $sub-yellow;
       text-decoration: none;
     }
   }
@@ -51,7 +51,7 @@
 
 .logo-container {
   position: absolute;
-  left: 50%;
+  left: 10%;
   -webkit-transform: $logo-transform;
   -moz-transform: $logo-transform;
   -ms-transform: $logo-transform;
@@ -70,6 +70,10 @@
     background-color: $main-yellow;
     -webkit-box-shadow: $webkit-shadow;
     box-shadow: $box-shadow;
+
+    &:hover {
+      background-color: $yellow-highlight;
+    }
 
     img {
       max-width: 100%;

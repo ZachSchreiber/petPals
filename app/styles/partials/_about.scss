@@ -1,7 +1,7 @@
 .hover-tabs {
   width: 100%;
   height: 40px;
-  background: $main-yellow;
+  background: #a0a2a3;
   border-bottom-right-radius: 2px;
 }
 
@@ -20,7 +20,7 @@
   margin: 0 auto;
 
   &:hover {
-    background: $yellow-highlight;
+    background: $lighter-gray;
     text-decoration: none;
   }
 }
@@ -48,7 +48,6 @@ ul h4{
 }
 body {
   text-align: center;
-  overflow: hidden;
 }
 
 h2 {
