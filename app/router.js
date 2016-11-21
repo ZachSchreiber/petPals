@@ -20,8 +20,8 @@ Router.map(function() {
 
   });
   this.route('petpalsadmin' , function() {
-    this.route('new');
-    this.route('edit', { path: '/:post_id/edit' });
+    this.route('schools');
+    this.route('teams', /*{ path: '/:post_id/edit' }*/);
 });
   this.route('join', function() {
     this.route('volunteer');

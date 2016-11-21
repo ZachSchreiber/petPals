@@ -1,3 +1,23 @@
+<div class="admin-blog">
+  <ul>
+    <li>
+      {{input type="text" value=model.title class="blog-title" placeholder="Title" autofocus="autofocus"}}
+    </li>
+    <li>
+      {{input type="date" value=model.date class="blog-date" placeholder="Date" autofocus="autofocus"}}
+    </li>
+    <li>
+      {{textarea rows="4" cols="70" value=model.body class="blog-body" placeholder="Blog Post" autofocus="autofocus"}}
+    </li>
+    <li>
+      <button disabled= {{isDisabled}} {{action 'savePost' model}} class="blog-button">Post</button>
+    </li>
+  </ul>
+  {{#if responseMessage}}
+    <div class="alert-success">{{responseMessage}}</div>
+  {{/if}}
+</div>
+
 <h1>List</h1>
 <div class="row">
   {{#each model as |blog-post|}}
@@ -10,7 +30,6 @@
           <p>{{blog-post.date}}</p>
         </div>
         <div class="post-footer">
-          {{#link-to 'petpalsadmin.edit' post.id class='edit-button'}}Edit{{/link-to}}
           <button class="delete-button" {{action 'deletePost' blog-post}}>Delete</button>
         </div>
       </div>

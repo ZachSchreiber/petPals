@@ -12,13 +12,14 @@
 }
 
 .content-container {
-  background: url('/assets/images/stock-dog') center no-repeat;
+  background: url('/assets/images/firstimage.png') center no-repeat;
   background-size: cover;
   width: 68%;
   height:  425px;
   display: inline-block;
   margin-left: 5%;
   padding: 20px;
+  padding-top: 0;
   border-radius: 2px;
   -webkit-box-shadow: $webkit-shadow;
   box-shadow: $box-shadow;
@@ -26,13 +27,14 @@
 
 #container {
   position: relative;
-  top: 40%;
+  top: 3%;
   width: 30%;
   height: 60%;
 }
 
 #block {
   border-radius: 2px;
+  border: 3px solid $sub-yellow;
   background: #CCC;
   filter: alpha(opacity=60);
   -moz-opacity: 0.6;

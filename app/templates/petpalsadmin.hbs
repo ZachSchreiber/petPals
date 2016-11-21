@@ -1,10 +1,19 @@
 
-<h1>Blog Posts</h1>
-
-<div class="toggle-container">
-  <ul class="toggle-list">
-    {{#link-to 'petpalsadmin.index' tagName="li"}}<a href="">List all</a>{{/link-to}}
-    {{#link-to 'petpalsadmin.new' tagName="li"}}<a href="">Add new</a>{{/link-to}}
-  </ul>
-</div>
-{{outlet}}
+<div class="content-full">
+    <div class="hover-tabs">
+      <ul class="tab-list">
+        <li>
+          {{#link-to 'petpalsadmin.index' tagName="li"}}<a href="">Blog</a>{{/link-to}}
+        </li>
+        <li>
+          {{#link-to 'petpalsadmin.teams' tagName="li"}}<a href="">Teams</a>{{/link-to}}
+        </li>
+        <li>
+          {{#link-to 'petpalsadmin.schools' tagName="li"}}<a href="">Schools</a>{{/link-to}}
+        </li>
+      </ul>
+    </div>
+    <div class="content-body">
+    {{outlet}}
+  </div>
+  </div>
