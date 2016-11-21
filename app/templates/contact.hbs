@@ -1,10 +1,14 @@
 {{outlet}}
 <div class="content-full">
+  <div id='contact-container'>
   <ul>
-    <li>
+    <li class='form'>
+    {{input type="name" value=yourname class="contact-input name" placeholder="name." autofocus="autofocus"}}
+  </li>
+    <li class='form'>
     {{input type="email" value=emailAddress class="contact-input email" placeholder="e-mail address." autofocus="autofocus"}}
   </li>
-  <li>
+  <li class='form'>
   {{textarea rows="4" cols="50"  value=message class="contact-input message" placeholder="message" autofocus="autofocus"}}
 </li>
   <li>
@@ -15,3 +19,4 @@
   <div class="alert-success">{{responseMessage}}</div>
   {{/if}}
   </div>
+</div>
