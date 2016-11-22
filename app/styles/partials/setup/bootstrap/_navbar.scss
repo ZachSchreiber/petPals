@@ -193,10 +193,8 @@
   //position: relative;
   //float: right;
 //  margin-right: $navbar-padding-horizontal;
-  margin-top: 8%;
+  //margin-top: 6%;
   padding: 1px 50px 1px 10px;
-  //@include navbar-vertical-align(34px);
-  //background-color: $main-yellow;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
 
@@ -215,7 +213,7 @@
     margin-top: 4px;
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: 780px) {
     display: none;
   }
 }
@@ -435,12 +433,12 @@
       }
     }
   }
-
+  /////////////////MOBILE NAV STYLE!!!!!!!!!!
   .navbar-toggle {
-    border-color: $navbar-default-toggle-border-color;
+    border-color: $main-yellow;
     &:hover,
     &:focus {
-      background-color: $navbar-default-toggle-hover-bg;
+      background-color: $main-yellow;
     }
     .icon-bar {
       background-color: $navbar-default-toggle-icon-bar-bg;
@@ -572,19 +570,19 @@
 
   // Darken the responsive nav toggle
   .navbar-toggle {
-    border-color: $navbar-inverse-toggle-border-color;
+    border-color:  $main-yellow;
     &:hover,
     &:focus {
-      background-color: $navbar-inverse-toggle-hover-bg;
+      background-color: $main-yellow;
     }
     .icon-bar {
-      background-color: $navbar-inverse-toggle-icon-bar-bg;
+      background-color:  $main-yellow;
     }
   }
 
   .navbar-collapse,
   .navbar-form {
-    border-color: darken($navbar-inverse-bg, 7%);
+    border-color:  $main-yellow;
   }
 
   // Dropdowns
