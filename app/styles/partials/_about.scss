@@ -19,9 +19,11 @@
   text-align: center;
   margin: 0 auto;
 
-  &:hover {
+  &:hover, &:active {
     background: $lighter-gray;
     text-decoration: none;
+    cursor: pointer;
+
   }
 }
 
