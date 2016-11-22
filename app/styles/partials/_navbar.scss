@@ -38,8 +38,8 @@
 
   .mainMenu {
     width: 35%;
-    padding-top: 2.5px;
-    padding-bottom: 2.5px;
+    //padding-top: 2.5px;
+    // padding-bottom: 2.5px;
     text-align: center;
 
     &:hover {
@@ -119,18 +119,18 @@
 }
 
 
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
 
 
   .navbar, .navbar-default {
     font-size: 1.5em;
     padding-top: 8%;
+    //height: 40px;
 
   }
 //Look to bootstrap navbar.scsss for other styles
   .navbar-toggle {
-    margin-top: 8%;
+    margin-top: 5%;
     padding: 9px 50px 9px 10px;
     background-color: $main-yellow;
     background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
@@ -158,9 +158,9 @@
   .navitems {
     //margin-top:1%;
     //z-index: 4;
-    left: 51%;
+    left: 37.5%;
     top: 35%;
-    width: 45%;
+    width: 60%;
     height: 205px;
     flex-direction: column;
     align-items:center;

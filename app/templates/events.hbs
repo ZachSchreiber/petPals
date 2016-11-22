@@ -1,3 +1,13 @@
 <div class="content-full">
+  <div class="hover-tabs">
+    <ul class="tab-list">
+      <li>
+        {{#link-to 'events.calender' tagName="li"}}<a href="">Calender</a>{{/link-to}}
+      </li>
+      <li>
+        {{#link-to 'events.blog' tagName="li"}}<a href="">Blog</a>{{/link-to}}
+      </li>
+    </ul>
+  </div>
 {{outlet}}
 </div>
