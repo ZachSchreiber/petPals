@@ -10,20 +10,24 @@
   justify-content: space-between;
   font-size: 1.2em;
   height: 100%;
+  text-align: center;
 }
 
 .tab-list li {
   width: 100%;
-  padding-top: 4px;
-  padding-bottom: 2.5px;
-  text-align: center;
+  //padding-top: 4px;
+  // padding-bottom: 2.5px;
+  height: 100%;
   margin: 0 auto;
 
-  &:hover, &:active {
+  &:hover {
     background: $lighter-gray;
     text-decoration: none;
     cursor: pointer;
 
+  }
+  .active {
+  background-color: $lighter-gray;
   }
 }
 

@@ -47,12 +47,13 @@
       text-decoration: none;
       cursor: pointer;
     }
+    .active {
+      background: $sub-yellow;
+    }
   }
 }
 
-.active {
-  background: $sub-yellow;
-}
+
 
 .logo-container {
   position: absolute;
