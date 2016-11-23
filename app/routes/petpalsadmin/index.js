@@ -1,17 +1,11 @@
 import Ember from 'ember';
 export default Ember.Route.extend({
 
-model() {
-  return this.store.findAll('blog-post');
-},
 
 model() {
-  return this.store.createRecord('teams');
+  return this.store.createRecord('blog-post');
 },
 
-// model() {
-//   return this.store.createRecord('blog-post');
-// }
 
 actions: {
   savePost(newPost) {

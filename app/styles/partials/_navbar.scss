@@ -50,9 +50,6 @@
   }
 }
 
-.active {
-  background: $sub-yellow;
-}
 
 .logo-container {
   position: absolute;
@@ -79,7 +76,6 @@
     &:hover {
       background-color: $yellow-highlight;
     }
-
     }
 
     img {
