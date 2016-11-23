@@ -4,9 +4,14 @@ export default Ember.Route.extend({
 model() {
   return this.store.findAll('blog-post');
 },
+
 model() {
-  return this.store.createRecord('blog-post');
+  return this.store.createRecord('teams');
 },
+
+// model() {
+//   return this.store.createRecord('blog-post');
+// }
 
 actions: {
   savePost(newPost) {

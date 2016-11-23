@@ -18,6 +18,26 @@
   {{/if}}
 </div>
 
+<div class="admin-blog">
+  <ul>
+    <li>
+      {{input type="file"  value=model.image  class="team-image" placeholder="Picture" autofocus="autofocus"}}
+    </li>
+    <li>
+      {{input type="text" value=model.name class="team-name" placeholder="Team Name" autofocus="autofocus"}}
+    </li>
+    <li>
+      {{textarea rows="4" cols="70" value=model.bio class="team-bio" placeholder="Team Bio" autofocus="autofocus"}}
+    </li>
+    <li>
+      <button disabled= {{isDisabled}} {{action 'saveTeam' model}} class="all-buttons">New Team</button>
+    </li>
+  </ul>
+  {{#if responseMessage}}
+    <div class="alert-success">{{responseMessage}}</div>
+  {{/if}}
+</div>
+
 <h1>List</h1>
 <div class="row">
   {{#each model as |blog-post|}}
