@@ -1,0 +1,21 @@
+<div class="content-full">
+<h2>Calendar of Events</h2>
+<div id="blog-main">
+  {{#each model as |calendar|}}
+    <div id="blog-container">
+      <div id="blog-title">
+        <ul>
+          <li>
+            <h3 id="title">{{calendar}}</h3>
+          </li>
+        </ul>
+      </div>
+      <div id="blog-body">
+        <p>{{calendar.description}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>
+</div>
+
+{{outlet}}
