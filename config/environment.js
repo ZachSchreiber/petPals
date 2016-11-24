@@ -10,9 +10,10 @@ module.exports = function(environment) {
       apiKey: "AIzaSyD6FPLAZ6bw1rAUudv5DoQ2AFXJUeq7aWc",
       authDomain: "pet-pals.firebaseapp.com",
       databaseURL: "https://pet-pals.firebaseio.com",
-      storageBucket: "pet-pals.appspot.com",
-      messagingSenderId: "988694555434"
+      storageBucket: "gs://pet-pals.appspot.com",
+      messagingSenderId: "988694555434",
     },
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -25,11 +26,10 @@ module.exports = function(environment) {
     },
 
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+
     }
   };
-
+  
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

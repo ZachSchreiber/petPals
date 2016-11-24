@@ -1,7 +1,9 @@
 <div class="admin-blog">
   <ul>
     <li>
-      <input type="file" accept="image/png,image/jpeg"  value=model.image onChange={{action 'upload'}} class="team-image" placeholder="Picture" autofocus="autofocus"/>
+      {{input type="text"  value=model.image class="team-pic" placeholder="picture URL" autofocus="autofocus"}}
+      <img src="assets/images/first.jpg"/>
+      <input type="file" value="upload" onChange= {{action 'upload'}} id="fileButton"/>
     </li>
     <li>
       {{input type="text" value=model.name class="team-name" placeholder="Team Name" autofocus="autofocus"}}

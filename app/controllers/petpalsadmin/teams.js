@@ -1,22 +1,39 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+
   actions: {
-  upload(event) {
-    const reader = new FileReader();
-    const file = event.target.files[0];
-    let imageData;
+  upload(e) {
+    var uploader = $('#uploader');
+    var fileButton = $('#fileButton');
 
-    reader.onload = () => {
-      imageData = reader.result;
-      this.set('data.image', imageData);
+    var file = e.target.files[0];
 
-      // additional logics as you wish
-    };
+    var storageRef = firebase.storage().ref('teamImage/' + file.name);
 
-    if (file) {
-      reader.readAsDataURL(file);
-    }
+    var task = storageRef.put(file);
+
+     var imgRef = storageRef;
+
+     imgRef.getDownloadURL().then(function(url) {
+       $('.team-pic').val(url);
+       $('.pic').attr('src', 'url');
+     });
+
+     task.on('state_changed',
+      function progress(snapshot) {
+        var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+        uploader.value = percentage;
+      },
+
+      function error(err) {
+
+      },
+
+      function complete() {
+
+      }
+   );
   },
 }
 });
