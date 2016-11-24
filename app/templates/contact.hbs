@@ -1,12 +1,13 @@
 {{outlet}}
 <div class="content-full">
+  <h1>Connect with us!</h1>
   <div id='contact-container'>
     <form method="POST" action="http://formspree.io/leighbryant@bellsouth.net">
       <input type='text' name='name' placeholder="Name">
       <input type="email" name="email" placeholder="Your email">
       <!--
       Test the hidden input when page is live on petpals, if it doesn't work, remove it.
-    -->
+      -->
       <input type="hidden" name="_next" value="//localhost:4200/contact" />
       <textarea name="message" placeholder="Your message" rows='7' cols='50'></textarea>
       <button class='allbuttons' type="submit">Send</button>
@@ -24,6 +25,8 @@
           <p><i class="fa fa-instagram" aria-hidden="true"></i></p>
         </li>
       </ul>
+
+      
     </div>
     {{#if responseMessage}}
       <div class="alert-success">{{responseMessage}}</div>
