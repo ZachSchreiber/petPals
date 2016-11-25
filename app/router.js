@@ -22,6 +22,9 @@ Router.map(function() {
   this.route('petpalsadmin' , function() {
     this.route('schools');
     this.route('teams', /*{ path: '/:post_id/edit' }*/);
+    this.route('indexedit');
+    this.route('schoolsedit');
+    this.route('teamsedit');
 });
   this.route('join', function() {
     this.route('volunteer');

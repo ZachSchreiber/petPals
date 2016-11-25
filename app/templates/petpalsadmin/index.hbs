@@ -1,4 +1,5 @@
 <div class="admin-blog">
+  <h2>Blog Entry</h2>
   <ul>
     <li>
       {{input type="text" value=model.title class="blog-title" placeholder="Title" autofocus="autofocus"}}
@@ -18,40 +19,4 @@
   {{/if}}
 </div>
 
-<div class="admin-blog">
-  <ul>
-    <li>
-      {{input type="file"  value=model.image class="team-image" placeholder="Picture" autofocus="autofocus"}}
-    </li>
-    <li>
-      {{input type="text" value=model.name class="team-name" placeholder="Team Name" autofocus="autofocus"}}
-    </li>
-    <li>
-      {{textarea rows="4" cols="70" value=model.bio class="team-bio" placeholder="Team Bio" autofocus="autofocus"}}
-    </li>
-    <li>
-      <button disabled= {{isDisabled}} {{action 'saveTeam' model}} class="all-buttons">New Team</button>
-    </li>
-  </ul>
-  {{#if responseMessage}}
-    <div class="alert-success">{{responseMessage}}</div>
-  {{/if}}
-</div>
-
-<h1>List</h1>
-<div class="row">
-  {{#each model as |blog-post|}}
-    <div class="post-container">
-        <div class="title-container">
-          <h3 class="blog-title">{{blog-post.title}}</h3>
-        </div>
-        <div class="panel-body">
-          <p>{{blog-post.body}}</p>
-          <p>{{blog-post.date}}</p>
-        </div>
-        <div class="post-footer">
-          <button class="all-buttons" {{action 'deletePost' blog-post}}>Delete</button>
-        </div>
-      </div>
-  {{/each}}
-</div>
+{{#link-to 'petpalsadmin.indexedit' tagName="li"}}<a href="">Edit Blogs</a>{{/link-to}}

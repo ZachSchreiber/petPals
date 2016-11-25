@@ -1,8 +1,9 @@
+<h2>Add a New Team</h2>
 <div class="admin-blog">
   <ul>
     <li>
       {{input type="text"  value=model.image class="team-pic" placeholder="picture URL" autofocus="autofocus"}}
-      <img src="assets/images/first.jpg"/>
+      <img  class="pic" src="assets/images/first.jpg"/>
       <input type="file" value="upload" onChange= {{action 'upload'}} id="fileButton"/>
     </li>
     <li>
@@ -19,23 +20,4 @@
     <div class="alert-success">{{responseMessage}}</div>
   {{/if}}
 </div>
-<div id="blog-main">
-  {{#each model as |teams|}}
-    <div id="blog-container">
-      <div id="blog-title">
-        <ul>
-          <li>
-            <p>{{teams.image}}</p>
-          </li>
-          <li>
-            <h3 id="title">{{teams.name}}</h3>
-          </li>
-        </ul>
-      </div>
-      <div id="blog-body">
-        <p>{{teams.bio}}</p>
-      </div>
-      <button class="all-buttons" {{action 'deleteTeam' teams}}>Delete</button>
-    </div>
-  {{/each}}
-</div>
+{{#link-to 'petpalsadmin.teamsedit' tagName="li"}}<a href="">Edit Teams</a>{{/link-to}}

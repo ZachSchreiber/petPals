@@ -17,7 +17,7 @@ export default Ember.Controller.extend({
 
      imgRef.getDownloadURL().then(function(url) {
        $('.team-pic').val(url);
-       $('.pic').attr('src', 'url');
+       $('.pic').attr('src', url);
      });
 
      task.on('state_changed',

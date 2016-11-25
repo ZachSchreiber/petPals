@@ -1,0 +1,43 @@
+<h1>List</h1>
+<div class="row">
+  {{#each model as |blog-post|}}
+    <div class="post-container">
+        <div class="title-container">
+          <h3 class="blog-title">{{blog-post.title}}</h3>
+        </div>
+        <div class="panel-body">
+          <p>{{blog-post.body}}</p>
+          <p>{{blog-post.date}}</p>
+        </div>
+        <div class="post-footer">
+          <button class="all-buttons" {{action 'deletePost' blog-post}}>Delete</button>
+        </div>
+      </div>
+  {{/each}}
+</div>
+
+
+
+
+
+
+<!-- <div id="blog-main">
+  {{#each model as |blog-post|}}
+    <div id="blog-container">
+      <div id="blog-title">
+        <ul>
+          <li>
+            <p>{{teams.image}}</p>
+          </li>
+          <li>
+            <h3 id="title">{{teams.name}}</h3>
+          </li>
+        </ul>
+      </div>
+      <div id="blog-body">
+        <p>{{teams.bio}}</p>
+      </div>
+      <button class="all-buttons" {{action 'deleteTeam' teams}}>Delete</button>
+    </div>
+  {{/each}}
+</div> -->

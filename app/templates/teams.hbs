@@ -4,17 +4,17 @@
 <div id="blog-main">
   {{#each model as |teams|}}
     <div id="blog-container">
-      <div id="blog-title">
+      <div class="img-name">
         <ul>
           <li>
             <img class="teamsImg" src="{{teams.image}}" />
           </li>
           <li>
-            <h3 id="title">{{teams.name}}</h3>
+            <h3 id="name">{{teams.name}}</h3>
           </li>
         </ul>
       </div>
-      <div id="blog-body">
+      <div id="bio">
         <p>{{teams.bio}}</p>
       </div>
     </div>

@@ -6,10 +6,9 @@ model() {
   return this.store.createRecord('blog-post');
 },
 
-
 actions: {
   savePost(newPost) {
-    newPost.save().then(() => this.transitionTo('petpalsadmin'));
+    newPost.save().then(() => this.transitionTo('events.blog'));
   },
 
   willTransition() {
@@ -18,12 +17,6 @@ actions: {
     this.controller.get('model').rollbackAttributes();
   },
 
-    deletePost(post) {
-      let confirmation = confirm('Are you sure?');
 
-      if (confirmation) {
-        post.destroyRecord();
-      }
-    }
   }
 });
