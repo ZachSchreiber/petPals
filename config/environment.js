@@ -6,6 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: 'https://pet-pals.firebaseio.com/',
     firebase: {
       apiKey: "AIzaSyD6FPLAZ6bw1rAUudv5DoQ2AFXJUeq7aWc",
       authDomain: "pet-pals.firebaseapp.com",
@@ -13,6 +14,9 @@ module.exports = function(environment) {
       storageBucket: "gs://pet-pals.appspot.com",
       messagingSenderId: "988694555434",
     },
+    torii: {
+    sessionServiceName: 'session',
+  },
 
     EmberENV: {
       FEATURES: {
@@ -26,10 +30,12 @@ module.exports = function(environment) {
     },
 
     APP: {
-
+  
     }
   };
-  
+
+
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
@@ -50,6 +56,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+
 
   }
 
