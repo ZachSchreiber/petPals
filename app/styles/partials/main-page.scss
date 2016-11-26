@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-
-
 .main-container {
   width: 100%;
   font-family: $main-font;
@@ -40,11 +38,15 @@
   top: 5%;
   width: 50%;
   height: 39%;
-}
+  border: 3px solid $sub-yellow;
+  border-radius: $main-radius;
+  &:hover {
+    border: 3px solid $yellow-highlight;
+    color: $accent-blue;
+  }
+
 
 #block {
-  border-radius: $main-radius;
-  border: 3px solid $sub-yellow;
   background: #CCC;
   filter: alpha(opacity=60);
   -moz-opacity: 0.6;
@@ -55,6 +57,7 @@
   height: 100%;
   width: 100%;
 }
+}
 
 #text {
   font-size: 1.25em;
@@ -62,7 +65,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-  color:$accent-blue;
+  //color: black;
   position: absolute;
   top: 0;
   left: 0;
