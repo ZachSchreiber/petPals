@@ -1,8 +1,9 @@
+<h2>Add a New Team</h2>
 <div class="admin-blog">
   <ul>
     <li>
       {{input type="text"  value=model.image class="team-pic" placeholder="picture URL" autofocus="autofocus"}}
-      <img src="assets/images/first.jpg"/>
+      <img  class="pic" src="assets/images/first.jpg"/>
       <input type="file" value="upload" onChange= {{action 'upload'}} id="fileButton"/>
     </li>
     <li>
@@ -39,3 +40,4 @@
     </div>
   {{/each}}
 </div>
+{{#link-to 'petpalsadmin.teamsedit' tagName="li"}}<a href="">Edit Teams</a>{{/link-to}}

@@ -9,7 +9,7 @@ export default Ember.Route.extend({
   actions: {
 
     saveTeam(newPost) {
-      newPost.save().then(() => this.transitionTo('petpalsadmin'));
+      newPost.save().then(() => this.transitionTo('teams'));
     },
 
     upload(e) {
@@ -46,12 +46,6 @@ export default Ember.Route.extend({
       this.controller.get('model').rollbackAttributes();
     },
 
-    deleteTeam(post) {
-      let confirmation = confirm('Are you sure?');
 
-      if (confirmation) {
-        post.destroyRecord();
-      }
-    }
   }
 });

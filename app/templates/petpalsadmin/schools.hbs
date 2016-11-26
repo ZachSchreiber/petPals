@@ -1,1 +1,15 @@
-
+<h2>New School</h2>
+<div class="admin-blog">
+  <ul>
+    <li>
+      {{input type="text"  value=model.schools class="team-image" placeholder="School Info" autofocus="autofocus"}}
+    </li>
+    <li>
+      <button disabled= {{isDisabled}} {{action 'saveSchool' model}} class="allbuttons">New School</button>
+    </li>
+  </ul>
+  {{#if responseMessage}}
+    <div class="alert-success">{{responseMessage}}</div>
+  {{/if}}
+</div>
+{{#link-to 'petpalsadmin.schoolsedit' tagName="li"}}<a href="">Edit Blogs</a>{{/link-to}}

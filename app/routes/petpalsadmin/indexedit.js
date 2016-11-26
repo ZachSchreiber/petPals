@@ -3,15 +3,10 @@ import Ember from 'ember';
 export default Ember.Route.extend({
 
   model() {
-    return this.store.createRecord('schools');
+    return this.store.findAll('blog-post');
   },
 
-
   actions: {
-
-    saveSchool(newPost) {
-      newPost.save().then(() => this.transitionTo('petpalsadmin/schools'));
-    },
 
     willTransition() {
       // rollbackAttributes() removes the record from the store
@@ -19,12 +14,12 @@ export default Ember.Route.extend({
       this.controller.get('model').rollbackAttributes();
     },
 
-    deletePost(post) {
-      let confirmation = confirm('Are you sure?');
+      deletePost(post) {
+        let confirmation = confirm('Are you sure?');
 
-      if (confirmation) {
-        post.destroyRecord();
+        if (confirmation) {
+          post.destroyRecord();
+        }
       }
     }
-  }
 });
