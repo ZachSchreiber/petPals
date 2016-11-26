@@ -40,8 +40,11 @@
 }
 
 h1,
-h2 {
+h2,
+h3 {
   text-align: center;
+  color: $accent-blue;
+
 }
 
 .fa.fa-paw {
@@ -59,7 +62,6 @@ body {
 h2 {
   display: inline-block;
   position: relative;
-
   &:after,
   &:before {
     content: "";
