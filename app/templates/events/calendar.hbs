@@ -1,21 +1,4 @@
-<div class="content-full">
 <h2>Calendar of Events</h2>
-<div id="blog-main">
-  {{#each model as |calendar|}}
-    <div id="blog-container">
-      <div id="blog-title">
-        <ul>
-          <li>
-            <h3 id="title">{{calendar}}</h3>
-          </li>
-        </ul>
-      </div>
-      <div id="blog-body">
-        <p>{{calendar.description}}</p>
-      </div>
-    </div>
-  {{/each}}
+<div class='responsiveCal'>
+    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=petpalstestemail%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
-</div>
-
-{{outlet}}
