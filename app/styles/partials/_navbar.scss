@@ -72,9 +72,11 @@
     background-color: $main-yellow;
     -webkit-box-shadow: $webkit-shadow;
     box-shadow: $box-shadow;
+    transition: .7s ease;
 
     &:hover {
       background-color: $yellow-highlight;
+      transform: rotate(27deg);
     }
     }
 
