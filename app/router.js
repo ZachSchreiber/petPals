@@ -15,7 +15,7 @@ Router.map(function() {
   this.route('contact');
   this.route('teams');
   this.route('events', function() {
-    this.route('calender');
+    this.route('calendar');
     this.route('blog');
 
   });
