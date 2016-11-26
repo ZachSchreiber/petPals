@@ -22,7 +22,6 @@ export default Ember.Route.extend({
 
        var task = storageRef.put(file);
 
-       var imgRef = storageRef;
 
        task.on('state_changed',
         function progress(snapshot) {
