@@ -11,7 +11,7 @@ export default Ember.Controller.extend({
 
     var storageRef = firebase.storage().ref('teamImage/' + file.name);
 
-    var task = storageRef.put(file);
+    var task = storageRef.put(file).then(function() {
 
      var imgRef = storageRef;
 
@@ -19,21 +19,8 @@ export default Ember.Controller.extend({
        $('.team-pic').val(url);
        $('.pic').attr('src', url);
      });
+     });
 
-     task.on('state_changed',
-      function progress(snapshot) {
-        var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        uploader.value = percentage;
-      },
-
-      function error(err) {
-
-      },
-
-      function complete() {
-
-      }
-   );
   },
 }
 });
