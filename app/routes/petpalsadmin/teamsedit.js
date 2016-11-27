@@ -18,7 +18,7 @@ export default Ember.Route.extend({
             let confirmation = confirm('Are you sure?');
 
             if (confirmation) {
-              this.find(team).destroyRecord().then(() => this.transitionTo('teams'));
+              team.destroyRecord().then(() => this.transitionTo('teams'));
             }
           }
         }

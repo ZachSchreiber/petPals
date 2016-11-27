@@ -1,4 +1,4 @@
-<h2>New School</h2>
+<h2>Add New a School</h2>
 <div class="admin-blog">
   <ul>
     <li>
@@ -7,9 +7,11 @@
     <li>
       <button disabled= {{isDisabled}} {{action 'saveSchool' model}} class="allbuttons">New School</button>
     </li>
+    <li>
+        <button class="allbuttons editbutton">{{#link-to 'petpalsadmin.schoolsedit'}}<a href="">Edit Schools</a>{{/link-to}}</button>
+    </li>
   </ul>
   {{#if responseMessage}}
     <div class="alert-success">{{responseMessage}}</div>
   {{/if}}
 </div>
-{{#link-to 'petpalsadmin.schoolsedit' tagName="li"}}<a href="">Edit Blogs</a>{{/link-to}}
