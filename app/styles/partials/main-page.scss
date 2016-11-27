@@ -21,10 +21,10 @@
 }
 
 .content-container {
-  background: url('/assets/images/firstimage.png') center no-repeat;
+  background: url('/assets/images/mainimage.png') center no-repeat;
   background-size: cover;
   width: 68%;
-  height:  460px;
+  height:  495px;
   display: inline-block;
   margin-left: 5%;
   margin-bottom: 5%;
@@ -44,8 +44,8 @@
 #container {
   position: relative;
   top: 5%;
-  width: 50%;
-  height: 39%;
+  width: 30%;
+  height: 60%;
   border: 3px solid $sub-yellow;
   border-radius: $main-radius;
   &:hover {
@@ -84,7 +84,7 @@
 #calender-container {
   float: right;
   width: 20%;
-  height: 460px;
+  height: 495px;
   margin-right: 5%;
   background: #fff;
   border-radius: $main-radius;
