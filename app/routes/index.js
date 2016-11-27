@@ -2,7 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('blog-post');
+    return this.store.findAll('blog-post', { reload: true }).
+      then(posts => posts.sortBy('date'));
   },
 
   session: Ember.inject.service('session'),

@@ -12,7 +12,7 @@
     border-bottom: 1px solid $lighter-gray;
 }
 
-#blog-title {
+.blog-title {
   display: inline-block;
   border-bottom: 1px solid $lighter-gray;
   border-radius: $main-radius;
@@ -23,4 +23,13 @@
 
 #blog-body {
   padding: 0 10px 0 10px;
+}
+
+.little-blog {
+  display: inline-block;
+  border-radius: $main-radius;
+  margin: 4px 0 4px 10px;
+  padding: 4px 10px 0px 10px;
+  text-align: center;
+
 }
