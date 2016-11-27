@@ -13,7 +13,7 @@ export default Ember.Route.extend({
     //   // if the model 'isNew'
     //   this.controller.get('model').rollbackAttributes();
     // },
-          deletePost(post) {
+          deleteSchool(post) {
             let confirmation = confirm('Are you sure?');
 
             if (confirmation) {

@@ -16,5 +16,8 @@
     <li><i class="fa fa-paw" aria-hidden="true"></i>Culbreth Middle School (Chapel Hill and Carrboro)</li>
     <li><i class="fa fa-paw" aria-hidden="true"></i>Pearsontown Elementary School (Durham Public School)</li>
     <li><i class="fa fa-paw" aria-hidden="true"></i>The Expedition School (Charter School)</li>
+    {{#each model as |schools|}}
+      <li><i class="fa fa-paw" aria-hidden="true"></i>{{schools.schools}}</li>
+    {{/each}}
   </ul>
 </div>
