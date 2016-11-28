@@ -90,6 +90,8 @@
   border-radius: $main-radius;
   -webkit-box-shadow: $webkit-shadow;
   box-shadow: $box-shadow;
+  overflow: hidden;
+  margin-bottom: 4px;
 
   #calender-head {
     color: black;
@@ -108,7 +110,8 @@
     width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 100%;
+    height: 90%;
+
   }
 }
 
