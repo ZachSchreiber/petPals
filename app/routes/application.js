@@ -17,5 +17,15 @@ export default Ember.Route.extend({
     signOut: function() {
       this.get('session').close();
     },
+
+    open: function(authorization){
+      var userId = authorization.user,
+          store  = this.get('store');
+      return store.find('user', userId).then(function(user){
+        return {
+          currentUser: user
+        };
+      });
+    },
   }
   });

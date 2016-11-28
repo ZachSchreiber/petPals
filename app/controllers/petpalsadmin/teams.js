@@ -4,7 +4,7 @@ export default Ember.Controller.extend({
 
   actions: {
   upload(e) {
-    
+
     var file = e.target.files[0];
 
     var storageRef = firebase.storage().ref('teamImage/' + file.name);
@@ -14,7 +14,7 @@ export default Ember.Controller.extend({
      var imgRef = storageRef;
 
      imgRef.getDownloadURL().then(function(url) {
-       $('.team-pic').val(url);
+       $('.team-pic').val(url).trigger("change");
        $('.pic').attr('src', url);
      });
      });

@@ -45,7 +45,7 @@
     text-align: center;
 
     &:hover {
-      background: $sub-yellow;
+      background: $yellow-highlight;
       text-decoration: none;
       cursor: pointer;
     }
@@ -77,8 +77,8 @@
     transition: .7s ease;
 
     &:hover {
-      background-color: $yellow-highlight;
-      transform: rotate(25deg);
+      background-color: $sub-yellow;
+      transform: rotate(24deg);
     }
     }
 
@@ -98,7 +98,7 @@
     margin: 0 0;
     list-style: none;
     font-size: 18px;
-    background-color: $yellow-highlight;
+    background-color: $main-yellow;
     border-radius: 2px;
     border: none;
     -webkit-box-shadow: $webkit-shadow;

@@ -16,15 +16,7 @@ export default Ember.Route.extend({
     }
   },
 
-  open: function(authorization){
-    var userId = authorization.user,
-        store  = this.get('store');
-    return store.find('user', userId).then(function(user){
-      return {
-        currentUser: user
-      };
-    });
-  },
+  
 
 
 
