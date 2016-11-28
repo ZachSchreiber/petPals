@@ -17,7 +17,7 @@ export default Ember.Route.extend({
             let confirmation = confirm('Are you sure?');
 
             if (confirmation) {
-              post.destroyRecord().then(() => this.transitionTo('schools'));
+              post.destroyRecord();
             }
           }
         }

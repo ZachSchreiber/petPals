@@ -9,7 +9,7 @@ export default Ember.Route.extend({
   actions: {
 
     saveTeam(newPost) {
-      newPost.save().then(() => this.transitionTo('teams'));
+      newPost.save().then(() => this.transitionTo('petpalsadmin.teamsedit'));
     },
 
     upload(e) {

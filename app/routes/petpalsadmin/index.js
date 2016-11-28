@@ -8,7 +8,7 @@ model() {
 
 actions: {
   savePost(newPost) {
-    newPost.save().then(() => this.transitionTo('events.blog'));
+    newPost.save().then(() => this.transitionTo('petpalsadmin.indexedit'));
   },
 
   willTransition() {

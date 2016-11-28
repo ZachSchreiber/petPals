@@ -10,7 +10,7 @@ export default Ember.Route.extend({
   actions: {
 
     saveSchool(newPost) {
-      newPost.save().then(() => this.transitionTo('join.schools'));
+      newPost.save().then(() => this.transitionTo('petpalsadmin.schoolsedit'));
     },
 
     willTransition() {
