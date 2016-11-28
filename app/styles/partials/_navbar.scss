@@ -38,8 +38,12 @@
   box-shadow: $box-shadow;
   -webkit-box-shadow: $webkit-shadow;
 
+   li.active, li.open{
+    background: $sub-yellow;
+}
+
   .mainMenu {
-    width: 35%;
+    width: 37%;
     //padding-top: 2.5px;
     // padding-bottom: 2.5px;
     text-align: center;
@@ -90,6 +94,7 @@
 
 
 .dropdown {
+
   .dropdown-menu {
     top: 0;
     position: absolute;
