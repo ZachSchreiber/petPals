@@ -99,3 +99,67 @@ h2:after {
   border-radius: $main-radius;
   margin: 15px;
 }
+
+
+
+@media only screen and (max-width: 1226px) {
+   .aboutList{
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 1150px) {
+   .aboutList{
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1030px) {
+   .aboutList{
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 955px) {
+   .aboutList{
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 885px) {
+   .aboutList{
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 830px) {
+   .aboutList{
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 740px) {
+   .aboutList{
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 665px) {
+   .aboutList{
+    width: 100%;
+  }
+}
+
+// @media only screen and (max-width: 630px) {
+//    .aboutList li{
+//     font-size: 14px;
+//   }
+// }
+// @media only screen and (max-width: 560px) {
+//    .aboutList li{
+//     font-size: 12px;
+//   }
+// }
+// @media only screen and (max-width: 530px) {
+//    .aboutList li{
+//     font-size: 11px;
+//   }
+// }
+// @media only screen and (max-width: 450px) {
+//    .aboutList li{
+//     font-size: 9px;
+//   }
+// }
