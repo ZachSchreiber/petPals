@@ -15,8 +15,14 @@ module.exports = function(environment) {
       messagingSenderId: "988694555434",
     },
     torii: {
-    sessionServiceName: 'session',
-  },
+      sessionServiceName: 'session',
+      providers: {
+        'google-oauth2': {
+          apiKey:      '570596961694-goch2u7rlk7dc2aekmbk24dgab5p3d0g.apps.googleusercontent.com',
+          redirectUri: '/petpalsadmin'
+        }
+      }
+    },
 
     EmberENV: {
       FEATURES: {
@@ -30,7 +36,7 @@ module.exports = function(environment) {
     },
 
     APP: {
-  
+
     }
   };
 
