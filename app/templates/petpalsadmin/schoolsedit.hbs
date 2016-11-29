@@ -1,9 +1,9 @@
 <h2>Schools Edit</h2>
-<div class="list">
+<div class="schoolList">
   {{#each model as |schools|}}
     <li><i class="fa fa-paw" aria-hidden="true"></i>{{schools.schools}}</li>
         <div class="post-footer">
-          <button class="allbuttons" {{action 'deleteSchool' schools}}>Delete</button>
+          <button class="allbuttons" {{action 'deleteSchool' schools}}><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
         </div>
   {{/each}}
 </div>
