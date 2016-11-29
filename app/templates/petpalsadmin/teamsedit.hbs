@@ -1,22 +1,18 @@
 <h2>Teams Edit</h2>
-<div id="blog-main">
+<div id="teams-main">
   {{#each model as |teams|}}
-    <div id="blog-container">
-      <div id="blog-title">
-        <ul>
-          <li>
-            <img class="teamsImg" src="{{teams.image}}" />
-          </li>
-          <li>
-            <h3 id="title">{{teams.name}}</h3>
-          </li>
-        </ul>
+    <div id="teams-container">
+      <button  {{action 'deleteTeam' teams}} class="allbuttons">Delete Team</button>
+      <div class="team-img-cont">
+      <div class="team-img">
+            <img class="teams-Img" src="{{teams.image}}" />
+        </div>
+        <div id="teams-name">
+            <h3 id="name">{{teams.name}}</h3>
+        </div>
       </div>
-      <div id="blog-body">
-        <p>{{teams.bio}}</p>
-      </div>
-      <div class="post-footer">
-        <button  {{action 'deleteTeam' teams}} class="allbuttons">Delete Team</button>
+      <div id="teams-bio">
+        <p id='bio'>{{teams.bio}}</p>
       </div>
     </div>
   {{/each}}
@@ -24,6 +20,9 @@
 
 
 
+<!-- <div class="post-footer">
+  <button  {{action 'deleteTeam' teams}} class="allbuttons">Delete Team</button>
+</div> -->
 
 <!-- <div id="blog-main">
   {{#each model as |teams|}}
