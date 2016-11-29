@@ -1,11 +1,22 @@
 <footer>
 
   <div class="login-donate">
-    <a {{action "signIn" "google"}} class="login">Google Login</a>
-  </div>
+     <!-- <a {{action "signIn" "google"}} class="login">Google Login</a> -->
+
   <!-- <p>is authed: {{ hooplah.isAuthenticated }}</p> -->
   <!-- <p>is user: {{ hooplah.currentUser.displayName }}</p> -->
   {{#if hooplah.isAuthenticated }}
-  <span>Currently logged in as {{hooplah.currentUser.displayName}} <a {{action "signOut" "google"}}>Sign out</a></span>
+  <div>
+  <p>Currently logged in as {{hooplah.currentUser.displayName}}</p>
+</div>
+<div>
+  <button {{action "signOut" "google"}} class="allbuttons editbutton">Sign out</button>
+</div>
+<div>
+<button class="allbuttons editbutton">{{#link-to 'petpalsadmin'}}<a href="">Admin</a>{{/link-to}}</button>
+</div>
+  {{else}}
+  <button {{action "signIn" "google"}} class="allbuttons">Google Login</button>
  {{/if}}
+ </div>
 </footer>
