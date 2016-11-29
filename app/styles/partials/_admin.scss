@@ -3,20 +3,27 @@
   width: 100px;
 }
 
+.post-container{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $darker-gray;
+}
+
+#school-edit {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media only screen and (max-width: 700px) {
   .allbuttons {
-    font-size: 15px;
+    font-size: 12px;
+    width: 100px;
   }
   .teams-Img {
     transition: none;
     height: 140px;
     width: 140px;
   }
-}
-
-
-.post-container{
-  display: flex;
-  flex-direction: row;
 }

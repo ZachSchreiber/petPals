@@ -1,18 +1,18 @@
-<h1>List</h1>
+<h2>List</h2>
 <div class="row">
   {{#each model as |blog-post|}}
     <div class="post-container">
         <div class="title-container">
           <h3 class="blog-title">{{blog-post.title}}</h3>
+          <button class="allbuttons" {{action 'deletePost' blog-post}}><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
           <h6 class='date'>{{blog-post.date}}</h6>
         </div>
         <div class="panel-body">
           <p class='blogBody'>{{blog-post.body}}</p>
-
         </div>
-        <div class="post-footer">
+        <!-- <div class="post-footer">
           <button class="allbuttons" {{action 'deletePost' blog-post}}><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
-        </div>
+        </div> -->
       </div>
   {{/each}}
 </div>

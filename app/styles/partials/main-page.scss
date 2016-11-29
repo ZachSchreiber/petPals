@@ -20,6 +20,22 @@
   }
 }
 
+::-webkit-input-placeholder {
+   color: black;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: black;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: black;
+}
+
+:-ms-input-placeholder {
+   color: black;  
+}
+
 .content-container {
   background: url('/assets/images/mainimage.png') center no-repeat;
   background-size: cover;
@@ -57,8 +73,8 @@
 #block {
   background: #CCC;
   filter: alpha(opacity=60);
-  -moz-opacity: 0.6;
-  opacity: 0.6;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
   position: absolute;
   top: 0;
   left: 0;
@@ -70,6 +86,7 @@
 #text {
   font-size: 1.35em;
   display: flex;
+  font-weight:300;
   align-items: center;
   justify-content: center;
   padding: 10px;
@@ -114,9 +131,10 @@
   }
 }
 
-#date,
-#title {
-  display: inline-block;
+
+.little-blog {
+  display: flex;
+  flex-direction: column;
 }
 
 #blog-title {

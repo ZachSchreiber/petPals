@@ -11,6 +11,7 @@ export default Ember.Route.extend({
         provider: provider,
       }).then(function(data) {
         console.log(data.displayName);
+        console.log("hey");
       });
     },
 

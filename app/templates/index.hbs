@@ -14,8 +14,8 @@
       {{#each model as |blog-post|}}
         <div id="blog-container">
           <div class="little-blog">
-            <h3 id="title">{{blog-post.title}}</h3>
             <p id="date">{{blog-post.date}}</p>
+            <h3 id="title">{{blog-post.title}}</h3>
             {{#link-to 'events.blog'}}<p>Read More...</p>{{/link-to}}
           </div>
           <!-- <div id="blog-body">
