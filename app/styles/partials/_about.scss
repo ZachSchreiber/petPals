@@ -11,12 +11,9 @@
   font-size: 1.2em;
   height: 100%;
   text-align: center;
-}
 
-.tab-list li {
+ li {
   width: 100%;
-  //padding-top: 4px;
-  // padding-bottom: 2.5px;
   height: 100%;
   margin: 0 auto;
 
@@ -24,10 +21,11 @@
     background: $sub-yellow;
     text-decoration: none;
     cursor: pointer;
-
   }
+}
+
   .active {
-  background: $sub-yellow;
+    background: $sub-yellow;
   }
 }
 
@@ -50,10 +48,11 @@ h3 {
   padding-right: 10px;
 }
 
-ul h4{
+ul h4 {
   font-weight: bolder;
   font-size: 22px;
 }
+
 body {
   text-align: center;
 }
@@ -61,6 +60,7 @@ body {
 h2 {
   display: inline-block;
   position: relative;
+
   &:after,
   &:before {
     content: "";
@@ -77,89 +77,83 @@ h2:after {
   left: 100%;
 }
 
-.testimonial-p{
+.testimonial-p {
   font-size: 16px;
   font-style: italic;
 }
 
-.fa.fa-quote-left{
+.fa.fa-quote-left {
   font-size: 35px;
   color: $lighter-gray;
 }
 
-
-.dogImage{
+.dogImage {
   width: 40%;
   border-radius: $main-radius;
   margin: 15px;
 }
 
-.verticalImage{
+.verticalImage {
   width: 30%;
   border-radius: $main-radius;
   margin: 15px;
 }
-
-
-
 @media only screen and (max-width: 1226px) {
-   .aboutList{
+  .aboutList {
     width: 55%;
+  }
+
+  .dogImage{
+    width: 45%;
   }
 }
 @media only screen and (max-width: 1150px) {
-   .aboutList{
+  .aboutList {
     width: 60%;
   }
 }
 @media only screen and (max-width: 1030px) {
-   .aboutList{
+  .aboutList {
     width: 65%;
   }
+  .dogImage{
+    width: 50%;
+  }
+
 }
 @media only screen and (max-width: 955px) {
-   .aboutList{
+  .aboutList {
     width: 70%;
   }
 }
 @media only screen and (max-width: 885px) {
-   .aboutList{
+  .aboutList {
     width: 75%;
+  }
+
+  .dogImage{
+    width: 55%;
   }
 }
 @media only screen and (max-width: 830px) {
-   .aboutList{
+  .aboutList {
     width: 85%;
   }
 }
 @media only screen and (max-width: 740px) {
-   .aboutList{
+  .aboutList {
     width: 95%;
+  }
+  .dogImage{
+    width: 60%;
   }
 }
 @media only screen and (max-width: 665px) {
-   .aboutList{
+  .aboutList {
     width: 100%;
   }
-}
 
-// @media only screen and (max-width: 630px) {
-//    .aboutList li{
-//     font-size: 14px;
-//   }
-// }
-// @media only screen and (max-width: 560px) {
-//    .aboutList li{
-//     font-size: 12px;
-//   }
-// }
-// @media only screen and (max-width: 530px) {
-//    .aboutList li{
-//     font-size: 11px;
-//   }
-// }
-// @media only screen and (max-width: 450px) {
-//    .aboutList li{
-//     font-size: 9px;
-//   }
-// }
+  .dogImage{
+    width: 80%;
+  }
+}
