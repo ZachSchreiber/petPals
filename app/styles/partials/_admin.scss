@@ -21,9 +21,16 @@
     font-size: 12px;
     width: 100px;
   }
+
   .teams-Img {
-    transition: none;
     height: 140px;
     width: 140px;
+    border-radius: 5px;
+    transition: none;
+
+    &.hover {
+      height: 140px;
+      width: 140px;
+    }
   }
 }
