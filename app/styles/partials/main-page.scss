@@ -6,6 +6,7 @@
 
 .main-container {
   width: 100%;
+  
   font-family: $main-font;
   background: url('/assets/images/background.png');
   overflow-y: scroll;
@@ -33,7 +34,7 @@
 }
 
 :-ms-input-placeholder {
-   color: black;  
+   color: black;
 }
 
 .content-container {

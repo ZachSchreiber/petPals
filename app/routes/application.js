@@ -33,20 +33,12 @@ export default Ember.Route.extend({
         console.error('LOGIN ERROR', error, email, credential)
       });
 
-      // console.log(provider);
-      // this.get('session').open('firebase', {
-      //   provider: provider,
-      // }).then(function(data) {
-      //   console.log(data.displayName);
-      // }, function() {
-      //   console.error('failed', arguments)
-      // });
     },
 
-    signOut: function(provider) {
+    signOut: function() {
+      var self = this;
       firebase.auth().signOut().then(function() {
         // Sign-out successful.
-        var self = this;
         console.log('successfully signed out')
         Ember.set(self.controller, 'hooplah.isAuthenticated', false);
       }, function(error) {
