@@ -136,6 +136,15 @@
     color: $accent-blue;
   }
 }
+
+#readMore{
+  background: $lighter-gray;
+  color: $darker-gray;
+  border: none;
+  border-radius: $main-radius;
+  outline: none;
+}
+
 @media only screen and (max-width: 1080px) {
   #text {
     font-size: 1.2em;
