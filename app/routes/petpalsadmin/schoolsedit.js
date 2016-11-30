@@ -8,20 +8,13 @@ export default Ember.Route.extend({
 
   actions: {
 
-  
-          deleteSchool(post) {
-            let confirmation = confirm('Are you sure?');
 
-            if (confirmation) {
-              post.destroyRecord();
-            }
-          }
-        }
+    deleteSchool(post) {
+      let confirmation = confirm('Are you sure?');
 
-
-
-
-
-
-
+      if (confirmation) {
+        post.destroyRecord();
+      }
+    }
+  }
 });

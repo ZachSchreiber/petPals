@@ -1,19 +1,1 @@
 @import "setup/variables";
-
-.login-donate {
-  float: right;
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 20px;
-
-  p {
-    padding-top: 23px;
-  }
-
-  .login {
-    align-self: flex-end;
-  }
-}

@@ -26,8 +26,8 @@ export default Ember.Controller.extend({
         mainNavBar.removeClass('in');
       });
 
-    
 
-    })
+
+    });
   }
 });

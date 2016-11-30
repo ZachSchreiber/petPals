@@ -11,14 +11,13 @@ export default Ember.Controller.extend({
 
     var task = storageRef.put(file).then(function() {
 
-     var imgRef = storageRef;
+    var imgRef = storageRef;
 
      imgRef.getDownloadURL().then(function(url) {
        $('.team-pic').val(url).trigger("change");
        $('.pic').attr('src', url);
      });
      });
-
   },
 }
 });

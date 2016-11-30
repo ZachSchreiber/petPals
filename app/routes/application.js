@@ -30,7 +30,7 @@ export default Ember.Route.extend({
         var email = error.email;
         // The firebase.auth.AuthCredential type that was used.
         var credential = error.credential;
-        console.error('LOGIN ERROR', error, email, credential)
+        console.error('LOGIN ERROR', error, email, credential);
       });
 
     },
@@ -39,11 +39,11 @@ export default Ember.Route.extend({
       var self = this;
       firebase.auth().signOut().then(function() {
         // Sign-out successful.
-        console.log('successfully signed out')
+        console.log('successfully signed out');
         Ember.set(self.controller, 'hooplah.isAuthenticated', false);
       }, function(error) {
         // An error happened.
-        console.error('error signed out', error)
+        console.error('error signed out', error);
       });
 
       // this.get('session').close();

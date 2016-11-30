@@ -6,17 +6,17 @@
   <!-- <p>is authed: {{ hooplah.isAuthenticated }}</p> -->
   <!-- <p>is user: {{ hooplah.currentUser.displayName }}</p> -->
   {{#if hooplah.isAuthenticated }}
-  <div>
-  <p>Currently logged in as {{hooplah.currentUser.displayName}}</p>
-</div>
-<div>
-  <button {{action "signOut" }} class="allbuttons editbutton">Sign out</button>
-</div>
-<div>
-<button class="allbuttons editbutton">{{#link-to 'petpalsadmin'}}<a href="">Admin</a>{{/link-to}}</button>
-</div>
+  <div id='loginName'>
+    <p>Currently logged in as {{hooplah.currentUser.displayName}}</p>
+  </div>
+  <div class='adminButtons'>
+    <button {{action "signOut" }} class="allbuttons adminbutton">Sign out</button>
+    <button class="allbuttons adminbutton">{{#link-to 'petpalsadmin'}}<a href="">Admin</a>{{/link-to}}</button>
+  </div>
+
   {{else}}
-  <button {{action "signIn" "google"}} class="allbuttons">Google Login</button>
+  <button {{action "signIn" "google"}} class="allbuttons googleButton">Google Login</button>
  {{/if}}
+
  </div>
 </footer>
