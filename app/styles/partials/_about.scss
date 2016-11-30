@@ -12,17 +12,17 @@
   height: 100%;
   text-align: center;
 
- li {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
+  li {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 
-  &:hover {
-    background: $sub-yellow;
-    text-decoration: none;
-    cursor: pointer;
+    &:hover {
+      background: $sub-yellow;
+      text-decoration: none;
+      cursor: pointer;
+    }
   }
-}
 
   .active {
     background: $sub-yellow;
@@ -37,44 +37,8 @@
   font-size: 16px;
 }
 
-h1,
-h2,
-h3 {
-  text-align: center;
-  color: $accent-blue;
-}
-
 .fa.fa-paw {
   padding-right: 10px;
-}
-
-ul h4 {
-  font-weight: bolder;
-  font-size: 22px;
-}
-
-body {
-  text-align: center;
-}
-
-h2 {
-  display: inline-block;
-  position: relative;
-
-  &:after,
-  &:before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 550%;
-    top: 50%;
-    right: 100%;
-    background: black;
-  }
-}
-
-h2:after {
-  left: 100%;
 }
 
 .testimonial-p {
@@ -103,7 +67,7 @@ h2:after {
     width: 55%;
   }
 
-  .dogImage{
+  .dogImage {
     width: 45%;
   }
 }
@@ -116,10 +80,10 @@ h2:after {
   .aboutList {
     width: 65%;
   }
-  .dogImage{
+
+  .dogImage {
     width: 50%;
   }
-
 }
 @media only screen and (max-width: 955px) {
   .aboutList {
@@ -131,7 +95,7 @@ h2:after {
     width: 75%;
   }
 
-  .dogImage{
+  .dogImage {
     width: 55%;
   }
 }
@@ -144,7 +108,8 @@ h2:after {
   .aboutList {
     width: 95%;
   }
-  .dogImage{
+
+  .dogImage {
     width: 60%;
   }
 }
@@ -153,7 +118,7 @@ h2:after {
     width: 100%;
   }
 
-  .dogImage{
+  .dogImage {
     width: 80%;
   }
 }

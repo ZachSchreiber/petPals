@@ -1,16 +1,5 @@
 @import "setup/variables";
 
-*{
-  box-sizing: border-box;
-}
-
-footer {
-    bottom:0;
-    width:100%;
-    //height:45px;
-    background: transparent;
- }
-
 .login-donate {
   float: right;
   width: 50%;
@@ -19,22 +8,12 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-right: 20px;
-  // margin-top: 4px;
 
   p {
-   padding-top: 23px;
- }
+    padding-top: 23px;
+  }
 
-  // .login-list {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: space-between;
-  //
-  // }
-
-.login {
-  align-self: flex-end;
-}
-
-
+  .login {
+    align-self: flex-end;
+  }
 }

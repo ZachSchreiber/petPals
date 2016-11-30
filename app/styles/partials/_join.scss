@@ -1,11 +1,15 @@
-.link a{
+.link a {
   text-decoration: underline;
 }
 
-#volunteerform{
+#volunteerform {
   text-decoration: underline;
   font-size: 20px;
   font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .joinList {
@@ -15,40 +19,28 @@
   text-align: left;
   font-size: 16px;
 }
-
 @media only screen and (max-width: 1270px) {
-
-  .joinList{
+  .joinList {
     width: 60%;
   }
 }
-@media only screen and (max-width: 860px){
-
-  .joinList{
+@media only screen and (max-width: 860px) {
+  .joinList {
     width: 70%;
   }
 }
-@media only screen and (max-width: 740px){
-
-  .joinList{
+@media only screen and (max-width: 740px) {
+  .joinList {
     width: 80%;
   }
 }
-@media only screen and (max-width: 650px){
-
-  .joinList{
+@media only screen and (max-width: 650px) {
+  .joinList {
     width: 90%;
   }
 }
-@media only screen and (max-width: 577px){
-
-  .joinList{
+@media only screen and (max-width: 577px) {
+  .joinList {
     width: 100%;
   }
 }
-// @media only screen and (max-width: 530px){
-//
-//   .joinList li{
-//     font-size: 10px;
-//   }
-// }
