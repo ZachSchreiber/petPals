@@ -6,6 +6,12 @@ model() {
   return this.store.createRecord('blog-post');
 },
 
+hooplah: {
+  isAuthenticated: true,
+  currentUser: null
+},
+auth: true,
+
 actions: {
   savePost(newPost) {
     newPost.save().then(() => this.transitionTo('petpalsadmin.indexedit'));

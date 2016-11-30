@@ -2,15 +2,15 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
+  hooplah: {
+    isAuthenticated: false,
+    currentUser: null
+  },
+  auth: true,
+
+
   init: function() {
     $(function() {
-      var date = new Date();
-      var month = date.getMonth() + 1;
-      var day = date.getDate();
-      var year = date.getFullYear();
-
-      var monthDate = month + day + year;
-      $(".blog-date").val(month + "/" + day + "/" + year).trigger("change");
 
       var mainNavBar = $('#main-navbar');
 

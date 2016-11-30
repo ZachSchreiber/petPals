@@ -7,6 +7,8 @@ export default Ember.Route.extend({
     return this.get('session').fetch().catch(function() {});
   },
 
+
+
   actions: {
     signIn: function(provider) {
       var self = this;
@@ -21,6 +23,7 @@ export default Ember.Route.extend({
         // ...
         console.log("LOGIN SUCCESS", token, user);
         Ember.set(self.controller, 'hooplah.isAuthenticated', true);
+        // Ember.set(Ember.controllerFor("petpalsadmin"), 'hooplah.isAuthenticated', true);
         Ember.set(self.controller, 'hooplah.currentUser', user);
       }).catch(function(error) {
         // Handle Errors here.
