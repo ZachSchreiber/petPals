@@ -10,7 +10,8 @@
       {{input type="text" value=model.title class="blog-title" placeholder="Title" autofocus="autofocus"}}
     </li>
     <li>
-      {{input type="date" value=model.date class="blog-date" placeholder="Date" autofocus="autofocus"}}
+      <button {{action 'fetchDate' model}} class="allbuttons"><i class="fa fa-calendar" aria-hidden="true"></i> Date</button>
+      {{input type="text" value=model.date class="blog-date" placeholder="Date" autofocus="autofocus"}}
     </li>
     <li>
       {{textarea rows="4" cols="70" value=model.body class="blog-body" placeholder="Blog Post" autofocus="autofocus"}}
