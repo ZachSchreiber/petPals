@@ -1,1 +1,31 @@
 @import "setup/variables";
+.login-donate {
+  //float: right;
+  width: 100%;
+  display: flex;
+  //flex-direction: row;
+  justify-content: flex-end;
+  //margin-right: 20px;
+
+
+  p {
+    padding-top: 23px;
+  }
+}
+
+.admin-button {
+  font-size: 12px;
+}
+.login-buttons {
+
+}
+ .login-buttons li {
+  float: left;
+}
+
+@media only screen and (max-width: 500px) {
+#login-name {
+  width: 35%;
+}
+
+}
