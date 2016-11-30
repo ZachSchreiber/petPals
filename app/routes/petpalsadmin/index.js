@@ -11,6 +11,15 @@ actions: {
     newPost.save().then(() => this.transitionTo('petpalsadmin.indexedit'));
   },
 
+  fetchDate() {
+    var date = new Date();
+    var month = date.getMonth() + 1;
+    var day = date.getDate();
+    var year = date.getFullYear();
+    var monthDate = month + day + year;
+    $(".blog-date").val(month + "/" + day + "/" + year).trigger("change");
+  },
+
   // upload(e) {
   //   var uploader = getElementById('uploader');
   //   var fileButton = getElementById('fileButton');

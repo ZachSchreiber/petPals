@@ -10,9 +10,11 @@
             <h3 id="title">{{blog-post.title}}</h3>
           </li>
         </ul>
+        {{#if blog-post.image}}
         <!-- <div class="blog-img">
               <img class="teams-Img" src="{{blog-post.image}}" />
           </div> -->
+          {{/if}} 
       </div>
       <div id="blog-body">
         <p>{{blog-post.body}}</p>
