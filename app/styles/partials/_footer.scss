@@ -9,12 +9,22 @@
 
 
   p {
-    padding-top: 23px;
+    padding-top: 12px;
   }
 }
 
 .admin-button {
   font-size: 12px;
+  background: $darker-gray;
+  color: $lighter-gray;
+  border: none;
+  border-radius: $main-radius;
+  outline: none;
+
+  &:hover, &:active{
+    color: $lighter-gray;
+    background: $darker-gray;
+  }
 }
 .login-buttons {
 
