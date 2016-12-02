@@ -1,9 +1,6 @@
 
 # Pet-pals
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
-
 ## Final project at The Iron Yard. Decided to use Ember.js for the first time, and firebase for Storage.
 
   + Ember
