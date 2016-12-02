@@ -4,6 +4,14 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+## Final project at The Iron Yard. Decided to use Ember.js for the first time, and firebase for Storage.
+
+  + Ember
+  + SASS
+  + jquery
+  + Javascript
+  + firebase
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -53,5 +61,5 @@ Specify what it takes to deploy your app.
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
 
-#  Running sass 
+#  Running sass
   * sass --watch app/styles/app.scss:dist/assets/app.css

@@ -34,7 +34,7 @@ export default Ember.Route.extend({
         // The firebase.auth.AuthCredential type that was used.
         var credential = error.credential;
         console.error('LOGIN ERROR', error, email, credential);
-      });
+      }).then(() => this.transitionTo('petpalsadmin.index'));
 
     },
 
@@ -47,7 +47,8 @@ export default Ember.Route.extend({
       }, function(error) {
         // An error happened.
         console.error('error signed out', error);
-      });
+      }).then(() => this.transitionTo('/'));
+;
 
       // this.get('session').close();
     },
