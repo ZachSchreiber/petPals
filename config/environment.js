@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'pet-pals',
     environment: environment,
-    rootURL: '/',
+    rootURL: 'https://zachschreiber.github.io/petPals/',
     locationType: 'auto',
     firebase: 'https://pet-pals.firebaseio.com/',
     firebase: {
