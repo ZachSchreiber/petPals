@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'pet-pals',
     environment: environment,
-    rootURL: '/index.html',
+    rootURL: '/',
     locationType: 'auto',
     firebase: 'https://pet-pals.firebaseio.com/',
     firebase: {
@@ -16,16 +16,11 @@ module.exports = function(environment) {
     },
     torii: {
       sessionServiceName: 'session',
-      providers: {
-        'google-oauth2': {
-          apiKey:      '570596961694-goch2u7rlk7dc2aekmbk24dgab5p3d0g.apps.googleusercontent.com',
-          redirectUri: '/petpalsadmin'
-        }
-      }
     },
 
     EmberENV: {
       FEATURES: {
+
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
       },
@@ -39,7 +34,6 @@ module.exports = function(environment) {
 
     }
   };
-
 
 
   if (environment === 'development') {

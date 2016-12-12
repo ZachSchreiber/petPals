@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
-  hooplah: {
+  admin: {
     isAuthenticated: false,
     currentUser: null
   },
@@ -24,7 +24,7 @@ export default Ember.Controller.extend({
         mainNavBar.removeClass('in');
       });
 
-      $('.content-full').on('click', function () {
+      $('.logo').on('click', function () {
         $('.navbar-toggle').addClass('collapsed');
         mainNavBar.removeClass('in');
       });

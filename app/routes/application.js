@@ -9,10 +9,11 @@ export default Ember.Route.extend({
 
 
 
+
   actions: {
     signIn: function(provider) {
       var self = this;
-
+      
       provider = new firebase.auth.GoogleAuthProvider();
 
       firebase.auth().signInWithPopup(provider).then(function(result) {
@@ -21,10 +22,10 @@ export default Ember.Route.extend({
         // The signed-in user info.
         var user = result.user;
         // ...
-        console.log("LOGIN SUCCESS", token, user);
-        Ember.set(self.controller, 'hooplah.isAuthenticated', true);
+        console.log("LOGIN SUCCESS");
+        Ember.set(self.controller, 'admin.isAuthenticated', true);
         // Ember.set(Ember.controllerFor("petpalsadmin"), 'hooplah.isAuthenticated', true);
-        Ember.set(self.controller, 'hooplah.currentUser', user);
+        Ember.set(self.controller, 'admin.currentUser', user);
       }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -42,8 +43,7 @@ export default Ember.Route.extend({
       var self = this;
       firebase.auth().signOut().then(function() {
         // Sign-out successful.
-        console.log('successfully signed out');
-        Ember.set(self.controller, 'hooplah.isAuthenticated', false);
+        Ember.set(self.controller, 'admin.isAuthenticated', false);
       }, function(error) {
         // An error happened.
         console.error('error signed out', error);

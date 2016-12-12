@@ -6,17 +6,17 @@ export default Ember.Route.extend({
       .then(post => post.sortBy('title:asc'));
   },
 
-  session: Ember.inject.service('session'),
+  // session: Ember.inject.service('session'),
+  //
+  // beforeModel: function() {
+  //   if (!this.get('session.isAuthenticated')) {
+  //     this.transitionTo('index');
+  //   } else {
+  //     this.transitionTo('petpalsadmin');
+  //   }
+  // },
 
-  beforeModel: function() {
-    if (!this.get('session.isAuthenticated')) {
-      this.transitionTo('index');
-    } else {
-      this.transitionTo('petpalsadmin');
-    }
-  },
 
-  
 
 
 
