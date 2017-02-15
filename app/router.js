@@ -17,12 +17,17 @@ Router.map(function() {
   this.route('events', function() {
     this.route('calendar');
     this.route('blog');
-    this.route('media');
+    this.route('news');
+    this.route('videos');
 
   });
   this.route('petpalsadmin' , function() {
     this.route('schools');
     this.route('teams');
+    this.route('videos');
+    this.route('news');
+    this.route('videosedit');
+    this.route('newsedit');
     this.route('indexedit');
     this.route('schoolsedit');
     this.route('teamsedit');

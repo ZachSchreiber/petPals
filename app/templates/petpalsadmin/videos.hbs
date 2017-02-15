@@ -1,0 +1,20 @@
+<h2>Videos</h2>
+<div class="admin-blog">
+  <ul>
+    <li>
+      <h3>videos</h3>
+    </li>
+    <li>
+      <p>Enter the youtube url bellow. Find your video on youtube.com, click: share, then embed. Copy JUST the url from the link without the quotes. ex: https://www.youtube.com/embed/lT55_u8URU0</p>
+    </li>
+    <li>
+      {{input type="text" value=model.video class="blog-title" placeholder="youtube url" autofocus="autofocus"}}
+    </li>
+    <li>
+      <button disabled= {{isDisabled}} {{action 'saveVideo' model}} class="allbuttons"><i class="fa fa-plus" aria-hidden="true"></i>New Video </button>
+    </li>
+    <li>
+      <button class="allbuttons editbutton">{{#link-to 'petpalsadmin.videosedit'}}<a href=""><i class="fa fa-pencil" aria-hidden="true"></i>Edit Videos</a>{{/link-to}}</button>
+    </li>
+    </ul>
+    </div>

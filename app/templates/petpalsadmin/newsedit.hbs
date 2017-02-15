@@ -1,0 +1,15 @@
+<h2>News Edit</h2>
+<div class="row">
+  {{#each model as |news|}}
+    <div class="post-container">
+        <div class="title-container">
+          <p class='date'>{{news.date}}</p>
+          <button class="allbuttons" {{action 'deleteNews' news}}><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+          <h3 class="blog-title">{{news.title}}</h3>
+        </div>
+        <div class="panel-body">
+          <p class='blogBody'>{{news.summary}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>

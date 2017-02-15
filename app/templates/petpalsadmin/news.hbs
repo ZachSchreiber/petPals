@@ -1,0 +1,23 @@
+<h2>News</h2>
+<div class="admin-blog">
+<ul>
+  <li>
+    {{input type="text" value=model.date class="blog-title" placeholder="Article Date" autofocus="autofocus"}}
+  </li>
+  <li>
+    {{input type="text" value=model.title class="blog-title" placeholder="Article Title" autofocus="autofocus"}}
+  </li>
+  <li>
+    {{input type="text" value=model.link class="blog-title" placeholder="Link to Article" autofocus="autofocus"}}
+  </li>
+  <li>
+    {{input type="text" value=model.summary class="blog-title" placeholder="Article Summary" autofocus="autofocus"}}
+  </li>
+  <li>
+    <button disabled= {{isDisabled}} {{action 'saveNews' model}} class="allbuttons"><i class="fa fa-plus" aria-hidden="true"></i>Make News</button>
+  </li>
+  <li>
+    <button class="allbuttons editbutton">{{#link-to 'petpalsadmin.newsedit'}}<a href=""><i class="fa fa-pencil" aria-hidden="true"></i>Edit News</a>{{/link-to}}</button>
+  </li>
+</ul>
+</div>

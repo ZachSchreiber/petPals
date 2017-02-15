@@ -1,0 +1,20 @@
+<h2>PetPals News</h2>
+{{#each reverse as |news|}}
+{{#if news.title}}
+<div id="blog-container">
+  <div id="blog-title">
+    <ul>
+      <li>
+        <p>{{news.date}}</p>
+      </li>
+      <li>
+        <a href="{{news.link}}"><h3 id="title">{{news.title}}</h3></a>
+      </li>
+    </ul>
+  </div>
+  <div id="blog-body">
+    <p>{{news.summary}}</p>
+  </div>
+</div>
+{{/if}}
+{{/each}}
