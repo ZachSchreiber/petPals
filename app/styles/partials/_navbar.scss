@@ -199,9 +199,18 @@
   }
 
   .logo-container {
-    top: 5%;
-    left: 20%;
-    width: 110px;
-    height: 110px;
-  }
+     top: 5%;
+     left: 20%;
+     width: 110px;
+     height: 110px;
+
+     .logo {
+       transition: none;
+       &:hover {
+         background-color: $main-yellow;
+         transform:  none;
+       }
+     }
+   }
+
 }

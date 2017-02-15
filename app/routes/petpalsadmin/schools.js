@@ -13,12 +13,6 @@ export default Ember.Route.extend({
       newPost.save().then(() => this.transitionTo('petpalsadmin.schoolsedit'));
     },
 
-    willTransition() {
-      // rollbackAttributes() removes the record from the store
-      // if the model 'isNew'
-      this.controller.get('model').rollbackAttributes();
-    },
-
     deletePost(post) {
       let confirmation = confirm('Are you sure?');
 

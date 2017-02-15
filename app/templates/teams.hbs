@@ -2,7 +2,8 @@
 <div class="content-full">
 <h2>Teams</h2>
 <div id="teams-main">
-  {{#each model as |teams|}}
+  {{#each reverse as |teams|}}
+  {{#if teams.name}}
     <div id="teams-container">
       <div class="team-img-cont">
       <div class="team-img">
@@ -16,6 +17,7 @@
         <p id='bio'>{{teams.bio}}</p>
       </div>
     </div>
+    {{/if}}
   {{/each}}
 </div>
 </div>

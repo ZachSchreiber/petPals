@@ -1,14 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-
-  admin: {
-    isAuthenticated: false,
-    currentUser: null
-  },
-  auth: true,
-
-
+  
   init: function() {
     $(function() {
 
@@ -30,4 +23,8 @@ export default Ember.Controller.extend({
       });
     });
   }
+
+
+
+
 });

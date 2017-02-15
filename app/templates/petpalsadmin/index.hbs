@@ -3,7 +3,7 @@
   <ul>
     <li>
       {{input type="text" value=model.image class="blog-pic" placeholder="Image URL" autofocus="autofocus"}}
-      <img class="pic" src="/assets/images/pawLogo.png" />
+      <img class="pic" src="/assets/images/pawlogo.png" />
       <input type="file" value="upload" onChange= {{action 'upload'}} id="fileButton" />
     </li>
     <li>
@@ -23,8 +23,5 @@
       <button class="allbuttons editbutton">{{#link-to 'petpalsadmin.indexedit'}}<a href=""><i class="fa fa-pencil" aria-hidden="true"></i> Edit Blogs</a>{{/link-to}}</button>
     </li>
   </ul>
-  {{#if responseMessage}}
-    <div class="alert-success">{{responseMessage}}</div>
 
-  {{/if}}
 </div>

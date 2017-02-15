@@ -1,24 +1,9 @@
 <footer>
   <div class="login-donate">
-     <!-- <a {{action "signIn" "google"}} class="login">Google Login</a> -->
-  <!-- <p>is authed: {{ hooplah.isAuthenticated }}</p> -->
-  <!-- <p>is user: {{ hooplah.currentUser.displayName }}</p> -->
-  {{#if hooplah.isAuthenticated }}
   <ul class="login-buttons">
-    <li id="login-name">
-  <p>Currently logged in as {{hooplah.currentUser.displayName}}</p>
-</li>
-<li>
-  <button {{action "signOut" }} class="allbuttons admin-button">Sign out</button>
-</li>
 <li>
 {{#link-to 'petpalsadmin'}}<button class="allbuttons admin-button">Admin</button>{{/link-to}}
 </li>
 </ul>
-  {{else}}
-<div class="signIn-button">
-  <button {{action "signIn" "google"}} class="allbuttons admin-button">Google Login</button>
-</div>
- {{/if}}
  </div>
 </footer>

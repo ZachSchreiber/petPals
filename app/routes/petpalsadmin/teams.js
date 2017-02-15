@@ -22,10 +22,5 @@ export default Ember.Route.extend({
       var imgRef = storageRef;
     },
 
-    willTransition() {
-      // rollbackAttributes() removes the record from the store
-      // if the model 'isNew'
-      this.controller.get('model').rollbackAttributes();
-    },
   }
 });

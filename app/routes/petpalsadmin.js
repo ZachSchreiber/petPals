@@ -9,11 +9,10 @@ export default Ember.Route.extend({
 
 
 
-
   actions: {
     signIn: function(provider) {
       var self = this;
-      
+
       provider = new firebase.auth.GoogleAuthProvider();
 
       firebase.auth().signInWithPopup(provider).then(function(result) {
@@ -24,7 +23,6 @@ export default Ember.Route.extend({
         // ...
         console.log("LOGIN SUCCESS");
         Ember.set(self.controller, 'admin.isAuthenticated', true);
-        // Ember.set(Ember.controllerFor("petpalsadmin"), 'hooplah.isAuthenticated', true);
         Ember.set(self.controller, 'admin.currentUser', user);
       }).catch(function(error) {
         // Handle Errors here.

@@ -32,3 +32,12 @@
   padding: 4px 10px 0;
   text-align: center;
 }
+
+@media only screen and (max-width: 400px) {
+
+  .content-full {
+    width: 95%;
+    margin-left: 0;
+    margin: 0 auto;
+  }
+}

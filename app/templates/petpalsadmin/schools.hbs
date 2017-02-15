@@ -1,6 +1,12 @@
-<h2>Add a New School</h2>
+<h2>New Schools, Videos, Articles</h2>
 <div class="admin-blog">
   <ul>
+    <li>
+      <p>Enter the youtube url bellow. Find your video on youtube.com, click: share, then embed. Copy JUST the url from the link without the quotes.</p>
+    </li>
+    <li>
+      {{input type="text" value=model.video class="blog-title" placeholder="youtube url" autofocus="autofocus"}}
+    </li>
     <li>
       {{input type="text"  value=model.schools class="team-image" placeholder="School Info" autofocus="autofocus"}}
     </li>
@@ -11,7 +17,4 @@
         <button class="allbuttons editbutton">{{#link-to 'petpalsadmin.schoolsedit'}}<a href=""><i class="fa fa-pencil" aria-hidden="true"></i> Edit Schools</a>{{/link-to}}</button>
     </li>
   </ul>
-  {{#if responseMessage}}
-    <div class="alert-success">{{responseMessage}}</div>
-  {{/if}}
 </div>

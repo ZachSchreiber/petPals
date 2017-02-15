@@ -6,12 +6,6 @@ model() {
   return this.store.createRecord('blog-post');
 },
 
-admin: {
-  isAuthenticated: true,
-  currentUser: null
-},
-auth: true,
-
 actions: {
   savePost(newPost) {
     newPost.save().then(() => this.transitionTo('petpalsadmin.indexedit'));
@@ -40,13 +34,6 @@ actions: {
 
 
   },
-
-  willTransition() {
-    // rollbackAttributes() removes the record from the store
-    // if the model 'isNew'
-    this.controller.get('model').rollbackAttributes();
-  },
-
 
   }
 });

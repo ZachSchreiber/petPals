@@ -1,4 +1,5 @@
 <div class="content-full">
+  {{#if admin.isAuthenticated}}
     <div class="hover-tabs">
       <ul class="tab-list">
         <li>
@@ -14,5 +15,21 @@
     </div>
     <div class="content-body">
     {{outlet}}
+    <div class="login-donate">
+    <ul class="login-buttons">
+      <li id="login-name">
+    <p>Currently logged in as {{admin.currentUser.displayName}}</p>
+  </li>
+  <li>
+    <button {{action "signOut" }} class="allbuttons admin-button">Sign out</button>
+  </li>
+</ul>
+</div>
   </div>
+  {{else}}
+  <div class="signIn-button">
+    <p>Please sign in to access admin pages</p>
+    <button {{action "signIn" "google"}} class="allbuttons admin-button">Google Login</button>
+  </div>
+  {{/if}}
   </div>

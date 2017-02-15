@@ -1,6 +1,7 @@
 import Ember from 'ember';
 export default Ember.Controller.extend({
 
+
   //blog image upload
 
   actions: {
@@ -22,6 +23,4 @@ export default Ember.Controller.extend({
 
   },
 }
-
-
 });

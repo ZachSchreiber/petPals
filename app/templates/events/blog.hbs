@@ -1,5 +1,6 @@
 <div id="blog-main">
-  {{#each model as |blog-post|}}
+  {{#each reverse as |blog-post|}}
+  {{#if blog-post.title}}
     <div id="blog-container">
       <div id="blog-title">
         <ul>
@@ -14,11 +15,12 @@
         <div class="blog-img">
               <img class="teams-Img" src="{{blog-post.image}}" />
           </div>
-          {{/if}} 
+          {{/if}}
       </div>
       <div id="blog-body">
         <p>{{blog-post.body}}</p>
       </div>
     </div>
+    {{/if}}
   {{/each}}
 </div>
