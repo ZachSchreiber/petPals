@@ -1,8 +1,9 @@
 
 <h2>Videos</h2>
-<div class="video-section" id="teams-main">
+<div id="teams-main">
 {{#each reverse as |video|}}
-<div id="video-container">
+{{#if video.video}}
+<div id="teams-container">
   <ul>
     <li>
       <p>{{video.title}}</p>
@@ -12,5 +13,6 @@
 </li>
 </ul>
 </div>
+{{/if}}
 {{/each}}
 </div>

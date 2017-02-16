@@ -7,10 +7,10 @@
 #news-link {
   font-size: 20px;
   padding-bottom: 2px;
-  border-bottom: 2px solid $accent-blue;
+  border-bottom: 1px solid $accent-blue;
   transition: .2s ease;
 
   &:hover {
-    border-bottom: 2px solid $main-yellow;
+    border-bottom: 1px solid $main-yellow;
   }
   }

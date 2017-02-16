@@ -1,6 +1,7 @@
 <h2>Schools Edit</h2>
 <div class="schoolList">
   {{#each model as |schools|}}
+  {{#if schools.schools}}
    <div id="school-edit">
   <div>
     <i class="fa fa-paw" aria-hidden="true"></i>{{schools.schools}}
@@ -9,5 +10,6 @@
     <button class="allbuttons" {{action 'deleteSchool' schools}}><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
   </div>
   </div>
+  {{/if}}
   {{/each}}
 </div>

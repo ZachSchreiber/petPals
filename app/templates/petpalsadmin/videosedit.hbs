@@ -2,6 +2,7 @@
 <h2>Videos Edit</h2>
 <div class="video-section" id="teams-main">
 {{#each reverse as |video|}}
+{{#if video.video}}
 <div id="video-container">
   <ul>
     <li>
@@ -13,5 +14,6 @@
 </li>
 </ul>
 </div>
+{{/if}}
 {{/each}}
 </div>

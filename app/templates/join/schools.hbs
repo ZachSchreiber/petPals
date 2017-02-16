@@ -3,7 +3,9 @@
 <div class='joinList'>
   <ul>
     {{#each model as |schools|}}
+    {{#if schools.schools}}
       <li><i class="fa fa-paw" aria-hidden="true"></i>{{schools.schools}}</li>
+    {{/if}}
     {{/each}}
   </ul>
 </div>

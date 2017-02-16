@@ -1,6 +1,7 @@
 <h2>News Edit</h2>
 <div class="row">
   {{#each model as |news|}}
+  {{#if newd.title}}
     <div class="post-container">
         <div class="title-container">
           <p class='date'>{{news.date}}</p>
@@ -11,5 +12,6 @@
           <p class='blogBody'>{{news.summary}}</p>
       </div>
     </div>
+    {{/if}}
   {{/each}}
 </div>
