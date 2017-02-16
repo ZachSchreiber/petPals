@@ -1,11 +1,17 @@
-<div id="blog-main">
+
 <h2>Videos Edit</h2>
 <div class="video-section" id="teams-main">
 {{#each reverse as |video|}}
-<div class="teams-container">
-  <button class="allbuttons" {{action 'deleteVideo' video}}><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+<div id="video-container">
+  <ul>
+    <li>
+      <p>{{video.title}}</p>
+      <button class="allbuttons" {{action 'deleteVideo' video}}><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+    </li>
+    <li>
   <iframe src="{{video.video}}" frameborder="0" allowfullscreen></iframe>
+</li>
+</ul>
 </div>
 {{/each}}
-</div>
 </div>

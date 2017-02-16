@@ -2,8 +2,15 @@
 <h2>Videos</h2>
 <div class="video-section" id="teams-main">
 {{#each reverse as |video|}}
-<div class="teams-container">
+<div id="video-container">
+  <ul>
+    <li>
+      <p>{{video.title}}</p>
+    </li>
+    <li>
   <iframe src="{{video.video}}" frameborder="0" allowfullscreen></iframe>
+</li>
+</ul>
 </div>
 {{/each}}
 </div>

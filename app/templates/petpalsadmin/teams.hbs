@@ -2,9 +2,9 @@
 <div class="admin-blog">
   <ul>
     <li>
-      {{input type="text"  value=model.image class="team-pic" placeholder="picture URL" autofocus="autofocus"}}
-      <img  class="pic" src="/assets/images/pawlogo.png"/>
       <input type="file" value="upload" onChange= {{action 'upload'}} id="fileButton"/>
+      <img  class="pic" src="/assets/images/pawlogo.png"/>
+      {{input type="text"  value=model.image class="team-pic" placeholder="picture URL" autofocus="autofocus"}}
     </li>
     <li>
       {{input type="text" value=model.name class="team-name" placeholder="Team Name" autofocus="autofocus"}}
