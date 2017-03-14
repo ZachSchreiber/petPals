@@ -19,6 +19,14 @@
   text-align: left;
   font-size: 16px;
 }
+
+.resourceList {
+  margin: 0 auto;
+  width: 70%;
+  line-height: 180%;
+  text-align: left;
+  font-size: 16px;
+}
 @media only screen and (max-width: 1270px) {
   .joinList {
     width: 60%;
@@ -30,17 +38,17 @@
   }
 }
 @media only screen and (max-width: 740px) {
-  .joinList {
+  .joinList, .resourceList {
     width: 80%;
   }
 }
 @media only screen and (max-width: 650px) {
-  .joinList {
+  .joinList, .resourceList {
     width: 90%;
   }
 }
 @media only screen and (max-width: 577px) {
-  .joinList {
+  .joinList, .resourceList {
     width: 100%;
   }
 }
