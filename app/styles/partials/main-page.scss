@@ -14,6 +14,7 @@
   h1, h2, h3, h4, h5, h6{
     font-family: $other-header;
     color: $accent-blue;
+    line-height: 30px;
   }
 }
 
@@ -36,13 +37,14 @@
 }
 
 .content-container {
-  background: url('/assets/images/mainTest.jpg') center no-repeat;
+  background: url('/assets/images/pawHand.png') center no-repeat;
   background-size: cover;
-  width: 68%;
-  height: 495px;
+  width: 95%;
+  height: 500px;
   display: inline-block;
-  margin-left: 5%;
-  margin-bottom: 5%;
+  //margin-left: 5%;
+  margin-bottom: 1%;
+  margin-top: 10%;
   padding: 0 20px 20px;
   border-radius: $main-radius;
   -webkit-box-shadow: $webkit-shadow;
@@ -56,11 +58,12 @@
 
 #container {
   position: relative;
-  top: 5%;
-  width: 30%;
-  height: 60%;
+  top: 15%;
+  width: 40%;
+  height: 80%;
   border: 3px solid $sub-yellow;
   border-radius: $main-radius;
+
 
   &:hover {
     border: 3px solid $main-yellow;
@@ -68,10 +71,7 @@
   }
 
   #block {
-    background: #CCC;
-    filter: alpha(opacity=60);
-    -moz-opacity: 0.7;
-    opacity: 0.7;
+    background: transparent;
     position: absolute;
     top: 0;
     left: 0;
@@ -80,11 +80,19 @@
   }
 }
 
+#mission-header {
+  width: 100%;
+  font-size: 2.6em;
+  font-family: $other-header;
+
+}
+
 #text {
-  font-size: 1.35em;
+  font-size: 1.6em;
   display: flex;
   font-weight: 300;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   justify-content: center;
   padding: 10px;
   position: absolute;
@@ -92,18 +100,18 @@
   left: 0;
   width: 99%;
   height: 100%;
+  color: #fff;
 }
 
 #calender-container {
-  float: right;
-  width: 20%;
-  height: 495px;
-  margin-right: 5%;
+  width: 95%;
+  //height: 495px;
+  margin: 0 auto;
   background: #fff;
   border-radius: $main-radius;
   -webkit-box-shadow: $webkit-shadow;
   box-shadow: $box-shadow;
-  overflow: hidden;
+  //overflow: hidden;
   margin-bottom: 4px;
 
   #calender-head {
@@ -119,8 +127,8 @@
 
   #blog-main {
     width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  //  overflow-y: scroll;
+    //overflow-x: hidden;
     height: 90%;
   }
 }
@@ -145,8 +153,11 @@
 }
 
 @media only screen and (max-width: 1080px) {
-  #text {
-    font-size: 1.2em;
+  // #text {
+  //   font-size: 1.2em;
+  // }
+  .content-container {
+    margin-top: 12%;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -161,8 +172,8 @@
   }
 
   #container {
-    top: 60%;
-    height: 40%;
+    top: 35%;
+    height: 63%;
     width: 100%;
   }
 
@@ -170,12 +181,25 @@
     width: 90%;
   }
 }
+
+@media only screen and (max-width: 680px) {
+.content-container {
+  margin-top: 15%;
+}
+}
+
 @media only screen and (max-width: 600px) {
   #text {
     font-size: 1em;
   }
 
   .content-container {
-    height: 250px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content-container {
+    margin-top: 22%;
   }
 }

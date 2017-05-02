@@ -20,10 +20,28 @@ export default Ember.Route.extend({
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
-        // ...
-        console.log("LOGIN SUCCESS");
-        Ember.set(self.controller, 'admin.isAuthenticated', true);
-        Ember.set(self.controller, 'admin.currentUser', user);
+        var uid = result.user.uid;
+        //console.log(uid);
+        //query the firebase database for the uid. "once" that's done, we want the value of the uid and then call the callback function with the result aka "snapshot", and assigning it to data. Yes I'm using es6. Then compare the firebase uid (data) with the uid of the person trying to login.
+        var firebaseUid = firebase.database().ref("admin");
+        firebaseUid.once('value', (snapshot) => {
+          var data = snapshot.val() || {};
+          //console.log(data);
+          if (uid === data) {
+            Ember.set(self.controller, 'admin.isAuthenticated', true);
+            Ember.set(self.controller, 'admin.currentUser', user);
+            Ember.set(self.controller, 'admin.uid', uid);
+          } else if(!data.uid) {
+            firebaseUid.set({
+              admin: uid
+            });
+            Ember.set(self.controller, 'admin.isAuthenticated', true);
+            Ember.set(self.controller, 'admin.currentUser', user);
+            Ember.set(self.controller, 'admin.uid', uid);
+          } else {
+            alert("Sorry, you are not an admin.");
+          }
+        });
       }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;

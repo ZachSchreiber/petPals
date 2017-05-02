@@ -4,7 +4,8 @@ export default Ember.Controller.extend({
 
   admin: {
     isAuthenticated: false,
-    currentUser: null
+    currentUser: null,
+    uid: null
   },
   auth: true,
 

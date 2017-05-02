@@ -1,6 +1,7 @@
 <h2>Blog Edit</h2>
 <div class="row">
   {{#each model as |blog-post|}}
+  {{#if blog-post.title}}
     <div class="post-container">
         <div class="title-container">
           <p class='date'>{{blog-post.date}}</p>
@@ -19,5 +20,6 @@
           <button class="allbuttons" {{action 'deletePost' blog-post}}><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
         </div> -->
       </div>
+      {{/if}}
   {{/each}}
 </div>
